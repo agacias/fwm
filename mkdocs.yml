@@ -1,0 +1,35 @@
+site_name: fun with migasfree
+site_description: 'Manual de migasfree'
+site_author: Alberto Gacías
+repo_url: https://github.com/migasfree/fwm.git
+
+copyright: Copyright &copy; 2013-2020 Alberto Gacías
+
+theme:
+  name: material
+  logo: img/logo.png
+  language: 'es'
+
+nav:
+  - 'Sobre este libro': index.md
+  - 'Introducción': part1/index.md
+  - 'Primeros pasos': part2/index.md
+
+
+markdown_extensions:
+  - codehilite
+  - attr_list
+  - markdown.extensions.footnotes
+  - markdown_include.include:
+      base_path: docs
+  - toc:
+      baselevel: 1
+  - admonition
+
+
+extra:
+  language: 'es'
+
+extra_css:
+    - css/extra.css
+

@@ -1,0 +1,37 @@
+
+img.center {
+    display: block !important;
+    margin: 0 auto;
+    height: 80%;
+    width:80%;
+}
+
+em.center {
+    display: block !important;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+ul.nav li {
+    font-size: 12px;
+    padding-left: 15px !important;
+}
+
+
+ul.nav li.main{
+    font-size: 14px ;
+    padding-left: 0px !important;
+}
+
+.part {
+    display: block !important;
+    text-align: center;
+    font-size: 36px;
+}
+
+#.codehilite pre{
+#    background-color: #f5f5f5;
+#}
+
