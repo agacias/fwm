@@ -1,0 +1,651 @@
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manual de migasfree">
+      
+      
+      
+        <meta name="author" content="Alberto Gacías">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.6">
+    
+    
+      
+        <title>Gcs - fun with migasfree</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b9ffd7b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestion-de-la-configuracion-software" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Cabecera">
+    <a href="../.." title="fun with migasfree" class="md-header-nav__button md-logo" aria-label="fun with migasfree">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            fun with migasfree
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Gcs
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/agacias/fwm.git/" title="Ir al repositorio" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="fun with migasfree" class="md-nav__button md-logo" aria-label="fun with migasfree">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    fun with migasfree
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/agacias/fwm.git/" title="Ir al repositorio" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Sobre este libro" class="md-nav__link">
+      Sobre este libro
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../part2/" title="Primeros pasos" class="md-nav__link">
+      Primeros pasos
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-de-la-configuracion-software" class="md-nav__link">
+    Gestión de la Configuración Software
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestión de la Configuración Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-proceso" class="md-nav__link">
+    El proceso
+  </a>
+  
+    <nav class="md-nav" aria-label="El proceso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peticion-de-cambio" class="md-nav__link">
+    Petición de cambio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambio" class="md-nav__link">
+    Cambio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liberacion" class="md-nav__link">
+    Liberación
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elemento-de-configuracion-software" class="md-nav__link">
+    Elemento de Configuración Software
+  </a>
+  
+    <nav class="md-nav" aria-label="Elemento de Configuración Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-paquete" class="md-nav__link">
+    El paquete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puesta-en-produccion" class="md-nav__link">
+    Puesta en producción
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/agacias/fwm.git/edit/master/docs/part1/gcs.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                  <h1>Gcs</h1>
+                
+                <h2 id="gestion-de-la-configuracion-software">Gestión de la Configuración Software</h2>
+<blockquote>
+<p>Nada es permanente a excepción del cambio.</p>
+<p>-- Heráclito de Éfeso.</p>
+</blockquote>
+<p>Estamos acostumbrados a actualizar periódicamente nuestras aplicaciones:
+los sistemas se hacen obsoletos rápidamente, aparecen nuevas
+tecnologías, hay errores que son resueltos, surgen nuevas necesidades.
+Sin importar en qué momento del ciclo de vida del sistema nos
+encontremos, el sistema cambiará, y el deseo de cambiarlo persistirá a
+lo largo de todo el ciclo de vida.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>Por tanto, el cambio en el software es <strong>inevitable</strong> y es <strong>deseable</strong>
+que ocurra.</p>
+<p>Es inevitable porque los desarrolladores cometemos errores y es mediante
+una modificación como los corregimos. A este tipo de cambios los
+llamamos <strong>correctivos</strong>.</p>
+<p>Por otro lado, el cambio es deseable ya que a menudo queremos incorporar
+nuevas funcionalidades al software o mejorar aquellas que ya existían.
+Mediante los cambios <strong>evolutivos</strong> es como mejoramos el software.</p>
+<p>El cambio genera <strong>confusión</strong> e incertidumbre y se produce desde que
+concebimos, construímos y también mientras mantenemos un proyecto
+software.</p>
+<p>El gran reto reside precisamente en gestionar de forma controlada dichos
+cambios usando alguna estrategia que los favorezca y facilite.</p>
+<p>De esto trata precisamente la <strong>Gestión de la Configuración Software</strong>
+(GCS), un proceso de la Ingeniería del Software que identifica, hace
+seguimiento y controla cada uno de los cambios que se producen en los
+sistemas.</p>
+<h3 id="objetivo">Objetivo</h3>
+<p>El objetivo de la GCS es <strong>conservar la integridad</strong> de los sistemas
+frente a los cambios.</p>
+<p>Un sistema será íntegro frente al cambio si:</p>
+<ul>
+<li>Mantiene correctamente las <strong>relaciones</strong> entre los distintos
+    cambios a medida que se van produciendo (el típico problema de
+    dependencias entre elementos).</li>
+<li>Permite la <strong>auditoría</strong> de cambios (conocimiento del estado de un
+    sistema al que se le han ido aplicando cambios sucesivamente).</li>
+</ul>
+<h3 id="el-proceso">El proceso</h3>
+<p>El proceso de la GCS es un conjunto de actividades que nos permitirá
+garantizar dicha integridad, y que podemos resumir en:</p>
+<ul>
+<li>Petición de cambio.</li>
+<li>Cambio.</li>
+<li>Liberación.</li>
+</ul>
+<h4 id="peticion-de-cambio">Petición de cambio</h4>
+<p>Cuando se nos reporta un error o una petición de mejora, lo primero que
+hacemos es identificar el <strong>Elemento de Configuración Software</strong> (ECS)
+al que se refiere.</p>
+<p>Un ECS es cualquier objeto software sometido a la GCS. Puede ser un
+manual de usuario, una especificación, un conjunto de datos para
+realizar tests, una aplicación, una librería, incluso las herramientas
+que se usan para realizar dichos cambios, etc.</p>
+<p>Una vez identificado el ECS se registra la petición de cambio.</p>
+<p>Las herramientas típicas para registrar y hacer el seguimiento del
+cambio son los denominados <code>gestores de proyectos</code> (Redmine, Bugzilla,
+Tracker, etc.)</p>
+<p>Cada petición de cambio es analizada más tarde pudiendo ser aceptada o
+rechazada. Si es rechazada, se avisa al informador y se cierra la
+petición. Si es aceptada, se asigna la petición a alguien para que
+realice dicho cambio.</p>
+<h4 id="cambio">Cambio</h4>
+<p>El cambio es la actividad que modifica el ECS, generando una nueva
+versión del ECS.</p>
+<p>En esta actividad se utilizan un conjunto muy diverso de herramientas,
+desde procesadores y editores de texto, sistemas de control de
+versiones, entornos de desarrollo integrados (IDE), depuradores,
+compiladores...</p>
+<h4 id="liberacion">Liberación</h4>
+<p>La liberación es la actividad de situar la nueva versión del ECS
+generada, en un repositorio o almacén para que posteriormente los
+clientes del ECS puedan acceder a él e instalarlo.</p>
+<h3 id="elemento-de-configuracion-software">Elemento de Configuración Software</h3>
+<p>Si observamos como los diferentes proyectos de Software Libre realizan
+la GCS, vemos que realizan las actividades mencionadas liberando
+finalmente el código fuente del proyecto en Internet.</p>
+<p>Estos proyectos trabajan con distintos tipos de ECS (.png, .txt, .py,
+.c, .bin, etc.) usando los <strong>Sistemas de Control de Versiones</strong>, junto
+con las plataformas de desarrollo colaborativo como sourceforge.net,
+github.com, etc.</p>
+<p>Este código fuente será posteriormente compilado por los mantenedores de
+las distribuciones GNU/Linux (Fedora, Red Hat, Debian, Ubuntu, etc.),
+realizando su propia GCS. Pero a diferencia de los primeros, las
+Distribuciones GNU/Linux sólo trabajan sobre un único tipo de ECS: <strong>el
+paquete</strong>, donde introducirán el programa ya compilado.</p>
+<p>Este simple hecho permite garantizar la integridad frente a los cambios
+de forma eficaz y sencilla, como veremos a continuación.</p>
+<h4 id="el-paquete">El paquete</h4>
+<p>Un paquete es un contenedor que encapsula un conjunto de ECS liberados
+por un determinado proyecto, junto a su metainformación.</p>
+<p>Contendrá, por tanto, el programa compilado para una determinada
+distribución y arquitectura, más un amplio conjunto de información, como
+puede ser:</p>
+<ul>
+<li>El autor del programa.</li>
+<li>La dirección del repositorio del proyecto.</li>
+<li>La versión del ECS.</li>
+<li>La arquitectura.</li>
+<li>El nombre y dirección e-mail del empaquetador.</li>
+<li>La fecha de empaquetado.</li>
+<li>El nombre del equipo en que se produjo el empaquetado.</li>
+<li>Una descripción corta del contenido del paquete.</li>
+<li>Una descripción larga.</li>
+</ul>
+<p>Pero, además, suelen incluir:</p>
+<ul>
+<li>
+<p>Dependencias con otros paquetes.</p>
+</li>
+<li>
+<p>Código a ejecutar antes y después de:</p>
+<ul>
+<li>Instalar.</li>
+<li>Actualizar.</li>
+<li>Eliminar el paquete.</li>
+</ul>
+</li>
+</ul>
+<p>Una vez que un mantenedor de una Distribución GNU/Linux ha creado un
+paquete, lo libera poniéndolo en un repositorio público a disposición de
+los clientes.</p>
+<h4 id="puesta-en-produccion">Puesta en producción</h4>
+<p>Los encargados de aplicar los cambios son los programas denominados
+<strong>gestores de paquetes</strong> tales como <code>yum</code>, <code>zypper</code> o <code>apt</code>.</p>
+<p>Un gestor de paquetes es un programa que permite poner en producción los
+cambios que han sido liberados en los repositorios.</p>
+<p>La actualización de un equipo se realiza comparando las versiones de los
+paquetes instalados con los paquetes de los repositorios públicos,
+detectando los que han aumentado su versión, resolviendo sus
+dependencias y finalmente, si no hay conflictos, obtienen desde los
+repositorios los paquetes necesarios.</p>
+<p>Una vez han descargado los paquetes, dan órdenes a los <strong>backends</strong>
+(<code>rpm</code>, <code>dpkg</code>, etc.), para que se produzca la desinstalación de los
+paquetes antiguos y la instalación de los nuevos.</p>
+<p>Los backends abren el paquete, y grosso modo:</p>
+<p>1. Extraen los ficheros del programa copiándolos en el sistema, y
+ejecutan además el código programado para antes y después de la
+actualización.</p>
+<p>2. La metainformación es extraída del paquete y se almacena en la base
+de datos del backend.</p>
+<p>Decía Ian Murdock, fundador de Debian, que el gran aporte del software
+libre a la industria, ha sido precisamente la invención del sistema de
+paquetería (paquete, repositorio, gestor de paquetes).</p>
+<p>Y no es para menos, ya que este sistema nos proporciona los dos
+requisitos necesarios que garantizan la integridad frente a los cambios:</p>
+<ol>
+<li>El control de dependencias, mediante el gestor de paquetes.</li>
+<li>La auditoría, mediante las consultas a la base de datos del backend.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">nota</p>
+<p>Si estás acostumbrado a instalar programas mediante el típico
+“./configure, make, install”, tienes que ser consciente que estás
+rompiendo la integridad frente a los cambios, ya que la base de
+datos del backend no es actualizada con este procedimiento. Todo lo
+que no sea instalar programas mediante el gestor de paquetes o el
+backend, rompe la integridad.</p>
+</div>
+<p>A continuación, se muestra una tabla con las operaciones más comunes que
+puedes emplear sobre algunos de los gestores de paquetes más conocidos:</p>
+<table>
+<thead>
+<tr>
+<th>Operaciones Gestores</th>
+<th>apt</th>
+<th>yum</th>
+<th>zypper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actualizar listado de paquetes disponibles</td>
+<td>apt-get update</td>
+<td>yum check-update</td>
+<td>zypper refresh</td>
+</tr>
+<tr>
+<td>Actualizar sistema</td>
+<td>apt-get upgrade</td>
+<td>yum update</td>
+<td>zypper update</td>
+</tr>
+<tr>
+<td>Instalar paquete</td>
+<td>apt-get install &lt;pkg&gt;</td>
+<td>yum install &lt;pkg&gt;</td>
+<td>zypper install&lt;pkg&gt;</td>
+</tr>
+<tr>
+<td>Borrar paquete</td>
+<td>apt-get remove &lt;pkg&gt;</td>
+<td>yum erase &lt;pkg&gt;</td>
+<td>zypper remove &lt;pkg&gt;</td>
+</tr>
+<tr>
+<td>Buscar paquete</td>
+<td>apt-cache</td>
+<td>yum list</td>
+<td>zypper search</td>
+</tr>
+<tr>
+<td>Buscar repositorio de un paquete</td>
+<td>apt-cache madison &lt;pkg&gt;</td>
+<td>yum whatprovides &lt;pkg&gt;</td>
+<td>zypper whatprovides &lt;pkg&gt;</td>
+</tr>
+</tbody>
+</table>
+<p>Veamos ahora las operaciones más comunes que puedes emplear sobre los
+backends <code>dpkg</code> y <code>rpm</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Operaciones Backends</th>
+<th>dpkg</th>
+<th>rpm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instalar fichero de paquete</td>
+<td>dpkg -i &lt;file.deb&gt;</td>
+<td>rpm -ivh &lt;file.rpm&gt;</td>
+</tr>
+<tr>
+<td>Borrar paquete</td>
+<td>dpkg -r  &lt;pkg&gt;</td>
+<td>rpm -e &lt;pkg&gt;</td>
+</tr>
+<tr>
+<td>Paquete que instala el fichero &lt;file&gt;</td>
+<td>dpkg -S  &lt;file&gt;</td>
+<td>rpm -qf &lt;file&gt;</td>
+</tr>
+<tr>
+<td>Ficheros del paquete</td>
+<td>dpkg -L &lt;pkg&gt;</td>
+<td>rpm -ql &lt;pkg&gt;</td>
+</tr>
+<tr>
+<td>Descripción del paquete</td>
+<td>dpkg -s &lt;pkg&gt;</td>
+<td>rpm -qi &lt;pkg&gt;</td>
+</tr>
+<tr>
+<td>Paquetes instalados</td>
+<td>dpkg -l</td>
+<td>rpm -qa</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Primera ley de la Ingeniería de Sistemas, Software Configuration
+Management, Bersoff, Henderson &amp; Siegel, Prentice-Hall, 1980&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2013-2020 Alberto Gacías
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.a0c4167b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fb26dd1d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

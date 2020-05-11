@@ -1,0 +1,762 @@
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manual de migasfree">
+      
+      
+      
+        <meta name="author" content="Alberto Gacías">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.6">
+    
+    
+      
+        <title>Admin - fun with migasfree</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b9ffd7b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#administrando-escritorios" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Cabecera">
+    <a href="../.." title="fun with migasfree" class="md-header-nav__button md-logo" aria-label="fun with migasfree">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            fun with migasfree
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Admin
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/agacias/fwm.git/" title="Ir al repositorio" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="fun with migasfree" class="md-nav__button md-logo" aria-label="fun with migasfree">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    fun with migasfree
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/agacias/fwm.git/" title="Ir al repositorio" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Sobre este libro" class="md-nav__link">
+      Sobre este libro
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../part2/" title="Primeros pasos" class="md-nav__link">
+      Primeros pasos
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#administrando-escritorios" class="md-nav__link">
+    Administrando escritorios
+  </a>
+  
+    <nav class="md-nav" aria-label="Administrando escritorios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-personalizacion" class="md-nav__link">
+    La personalización
+  </a>
+  
+    <nav class="md-nav" aria-label="La personalización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gestores-de-sistemas" class="md-nav__link">
+    Gestores de Sistemas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empaquetando-la-personalizacion" class="md-nav__link">
+    Empaquetando la personalización
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#niveles-de-personalizacion" class="md-nav__link">
+    Niveles de personalización
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-liberacion" class="md-nav__link">
+    La liberación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#despliegue-migasfree" class="md-nav__link">
+    Despliegue Migasfree
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-gcs-en-tu-organizacion" class="md-nav__link">
+    La GCS en tu organización
+  </a>
+  
+    <nav class="md-nav" aria-label="La GCS en tu organización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beneficios" class="md-nav__link">
+    Beneficios
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/agacias/fwm.git/edit/master/docs/part1/admin.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                  <h1>Admin</h1>
+                
+                <h2 id="administrando-escritorios">Administrando escritorios</h2>
+<blockquote>
+<p>En todo lo que nos rodea y en todo lo que nos mueve, debemos
+advertir que interviene en algo la casualidad.</p>
+<p>-- Anatole France.</p>
+</blockquote>
+<p>En el capítulo anterior, hemos hablado de la GCS y de cómo las
+distribuciones GNU/Linux utilizan el sistema de paquetería para
+garantizar la integridad frente al cambio.</p>
+<p>Si tienes un equipo doméstico, todos los cambios producidos y liberados
+por los distintos proyectos y que hayan sido empaquetados y liberados
+por tu distribución GNU/Linux, serán instalados convenientemente con el
+simple hecho de dar la orden al gestor de paquetes para que actualice tu
+sistema.</p>
+<p>Ahora bien, en una organización donde se requiera administrar los
+escritorios esto no es suficiente, veamos el porqué.</p>
+<h3 id="la-personalizacion">La personalización</h3>
+<p>La primera dificultad importante a la que se va a enfrentar un
+administrador, va a ser la de la personalización.</p>
+<p>Imagina que tienes que migrar y administrar 1000 equipos a GNU/Linux y
+que tienes en tu red un servicio NTP, requiriéndose que todos tus
+escritorios estén con la hora sincronizada con este servicio.</p>
+<p>Vas a tener que personalizar el cliente NTP en todos tus escritorios.</p>
+<p>Una manera que se suele utilizar es instalar en un equipo una
+distribución GNU/Linux desde un DVD, editar el fichero de configuración
+del cliente NTP y configurar la IP (o el nombre DNS) del servidor donde
+se encuentra el servcio NTP. Después, puedes crear una imagen del disco
+duro con un sistema de clonado como pueda ser
+<a href="http://clonezilla.org/">Clonezilla</a> y clonar uno a uno los equipos
+usando dicha imagen.</p>
+<p>Con este método, la personalización inicial reside en dicha imagen, pero
+sigamos imaginando...</p>
+<p>Un día, a mitad de migración, recibes un correo y lees:</p>
+<p><em>"Alberto: El servicio NTP dejará de dar servicio a partir del día 10.
+  En su lugar vamos a disponer de un nuevo servicio, llamado QueHoraEs,
+  que es mucho mejor porque..."</em></p>
+<p>En este momento, ya estarás pensando en los 400 equipos que tienes
+migrados y te echarás las manos a la cabeza porque es evidente que este
+sistema de personalización no es adecuado.</p>
+<div class="admonition note">
+<p class="admonition-title">nota</p>
+<p>La personalización inicial es muy sencilla de realizar, pero un cambio
+en la personalización puede darse en cualquier momento, y tienes que
+estar preparado para poder realizarlo.</p>
+</div>
+<h4 id="gestores-de-sistemas">Gestores de Sistemas</h4>
+<p>Afortunadamente, existen unas herramientas denominadas <strong>Gestores de
+Sistemas</strong> (<a href="http://en.wikipedia.org/wiki/List_of_systems_management_systems">Systems Management
+Systems</a>),
+que pueden ayudarnos en la administración de los escritorios.</p>
+<p>Algunos de estos Gestores de Sistemas se centran en la adquisición del
+estado de los equipos como <a href="http://www.nagios.org/">Nagios</a>, y otros
+permiten automatizar tareas mediante la ejecución de código en los
+equipos de manera centralizada como
+<a href="http://www.novell.com/products/zenworks/">Zenworks</a>,
+<a href="http://www.canonical.com/enterprise-services/ubuntu-advantage/landscape">Landscape</a>,
+<a href="http://www.opscode.com/chef/">chef</a>,
+<a href="http://www.puppetlabs.com/">puppet</a>, <a href="http://cfengine.com/">cfengine</a>,
+<a href="http://ansible.cc/">ansible</a>.</p>
+<p>Los Gestores de Sistemas están muy influidos por las iniciativas
+realizadas en los sistemas de gestión de redes de telecomunicaciones,
+pudiendo realizar una o un conjunto de las siguientes tareas:</p>
+<ul>
+<li>Inventario hardware.</li>
+<li>Monitoreado de disponibilidad de servidores y mediciones.</li>
+<li>Inventario e instalación de software.</li>
+<li>Gestión de antivirus y anti-malware.</li>
+<li>Monitoreado de las actividades de los usuarios.</li>
+<li>Monitoreado de la capacidad de los sistemas.</li>
+<li>Gestión de seguridad.</li>
+<li>Gestión de almacenamiento.</li>
+<li>Monitoreado de la utilización y capacidades de la red.</li>
+</ul>
+<p>Estas tareas podemos clasificarlas de acuerdo a <strong>FCAPS</strong>, un modelo y
+marco de trabajo de red de la gestión de telecomunicaciones de ISO para
+la gestión de redes. FCAPS es un acrónimo de Fault, Configuration,
+Accounting, Performance, Security (Falla, Configuración, Contabilidad,
+Desempeño, Seguridad), que son las categorías en las cuales el modelo
+ISO define las tareas de gestión de redes.</p>
+<ul>
+<li>
+<p><strong>Fault</strong> (Fallas): Es un evento que tiene un significado
+    negativo. Su objetivo es reconocer, aislar , corregir y registrar
+    fallos. Puede utilizar análisis de tendencias para predecir
+    errores. Cuando se detecta un fallo o evento, se envía una
+    notificación.</p>
+</li>
+<li>
+<p><strong>Configuration</strong> (Configuración): En el proceso de gestión de la
+    configuración, las operaciones diarias son monitoreadas y
+    controladas.</p>
+<p>Los objetivos de la gestión de la configuración son:</p>
+<ul>
+<li>Recolectar información.</li>
+<li>Modificar la configuración.</li>
+<li>Generación de reportes</li>
+<li>Gestión de cambios.</li>
+</ul>
+<p>Los cambios de Hardware y Software son controlados por este
+proceso:</p>
+<ul>
+<li>Actualización, Instalación y eliminación de programas.</li>
+<li>Actualización, Instalación y eliminación de equipamiento
+      (impresoras, scaners, memoria, etc.)</li>
+</ul>
+<p>Este proceso debe tener en cuenta:</p>
+<ul>
+<li>Permitir acceso rápido a la información de la configuración.</li>
+<li>Facilitar la configuración remota de los dispositivos.</li>
+<li>Proporcionar un inventario actualizado de Software y
+      Hardware.</li>
+<li>Simplificación de la configuración de dispositivos.</li>
+<li>El seguimiento de cambios a la configuración.</li>
+</ul>
+</li>
+<li>
+<p><strong>Accounting</strong> (Contabilidad): Su objetivo es reunir las
+    estadísticas de los usuarios.</p>
+</li>
+<li>
+<p><strong>Performance</strong> (Desempeño). Recolentando y analizando los datos
+    de rendimiento, el estado general de los sistemas pueden ser
+    monitorizado. Las tendencias pueden avisar de fallos de capacidad
+    o de cuestiones relacionadas con la fiabilidad de los sistemas,
+    antes de que en estos ocurran. Umbrales de rendimiento pueden ser
+    establecidos para lanzar alarmas que serían controladas por la
+    gestión de fallos habitual. Las alarmas se pueden clasificar
+    atendiendo al grado de severidad.</p>
+</li>
+<li><strong>Security</strong> (Seguridad). Se encarga de controlar el acceso a
+    recursos de red. La seguridad de los datos puede ser conseguida
+    con la autenticación, cifrado y permisos, principalmente.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">nota</p>
+<p>Migasfreee atendiendo a FCAPS, tiene capacidades de Faults,
+Configuration y Accounting.</p>
+</div>
+<p>Un ejemplo de funcionamiento típico de un Gestor de Sistemas que
+incorpore tareas de <em>Configuration</em> usaría un lenguaje que especificaría
+a qué estado se quiere llevar a los equipos, no cómo llegar a ese
+estado. En nuestro caso, sería algo parecido a esto:</p>
+<ul>
+<li>asegúrate de que el paquete ntp-client está desinstalado,</li>
+<li>asegúrate de que el paquete quehoraes-client está instalado,</li>
+<li>asegúrate de que el fichero de configuración de quehoraes-client es
+    el mismo que el que está en el servidor.</li>
+</ul>
+<p>Periódicamente, los clientes se conectarían al servidor para obtener
+este código que será ejecutado mediante el intérprete propio del Gestor
+de Sistemas instalado en el cliente.</p>
+<p>Este sistema permite automatizar aquellas tareas que realizan a menudo
+los administradores de sistemas, y aunque algunos Gestores de Sistemas
+se las ingenian para llevar un control de versiones, mantienen una base
+de datos independiente a la de los backends de los gestores de paquetes,
+dejando en entredicho todo lo relativo a la integridad de los sistemas.</p>
+<h4 id="empaquetando-la-personalizacion">Empaquetando la personalización</h4>
+<p>En AZLinux usamos otro método: empaquetamos siempre la personalización.</p>
+<p>Para el caso del cliente “QueHoraEs”, crearíamos el paquete
+azl-quehoraes-client<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">1</a></sup> con la siguiente información:</p>
+<ul>
+<li>Dependencias: quehoraes-client</li>
+<li>Obsoletos: ntp-client</li>
+<li>
+<p>En el script de postinstalación escribiríamos el siguiente código:</p>
+<blockquote>
+<p>En el fichero de configuración del cliente QueHoraes, modificar el
+valor de la entrada “server=” por la IP del servidor QueHoraEs</p>
+</blockquote>
+</li>
+</ul>
+<p>¡Listo! Con esto queda garantizada la integridad frente al cambio de la
+personalización, aprovechándonos de la integridad que nos proporciona el
+sistema de paquetería de nuestra distribución GNU/Linux.</p>
+<p>Una vez empaquetada nuestra personalización, se hace relativamente
+sencillo realizar cualquier cambio posterior en ella. Pero crear un
+paquete desde cero para personalizar una distribución GNU/Linux no es
+tan fácil, no tanto por la creación del paquete en sí, sino porque la
+personalización requiere de los conocimientos suficientes sobre el
+sistema GNU/Linux y sobre la propia aplicación que se personaliza.</p>
+<div class="admonition note">
+<p class="admonition-title">nota</p>
+<p>Empaquetar la personalización nos asegura la integridad de los
+sistemas frente a sus cambios.</p>
+<p>Date cuenta que no es necesario ningún Gestor de Sistemas para
+instalar dicha personalización. Sólo necesitas el Gestor de Paquetes,
+y éste siempre lo tienes disponible en cualquier distribución
+GNU/Linux.</p>
+</div>
+<h4 id="niveles-de-personalizacion">Niveles de personalización</h4>
+<p>Las aplicaciones suelen incorporar dos niveles de personalización:</p>
+<ul>
+<li>La del usuario.</li>
+<li>La del sistema (para todos los usuarios del sistema).</li>
+</ul>
+<p>La personalización del usuario es prioritaria a la del sistema, siempre
+y cuando esta última no sea obligatoria.</p>
+<p>Es conveniente conocer si la aplicación que vas a configurar incorpora
+la personalización a nivel de sistema, ya que ésta es la que se tendrá
+que configurar.</p>
+<p>En los casos en que las aplicaciones sólo tengan la configuración a
+nivel de usuario, o en los casos en los que se requiera, tendrás que
+recorrer todos los usuarios para aplicar la personalización a cada uno
+de ellos.</p>
+<h3 id="la-liberacion">La liberación</h3>
+<p>Es el segundo problema importante con el que vas a tener que lidiar.</p>
+<p>Por un lado, debes independizarte de los repositorios públicos de tu
+distribución GNU/Linux, por el simple motivo de que no puedes permitir
+que el control de los cambios que se instalarán en tus máquinas, lo
+tenga tu distribución GNU/Linux en vez de tu organización.</p>
+<p>¿Imaginas que habría pasado en AZLinux cuando OpenSuSE sustituyó
+OpenOffice por LibreOffice? Cuando los usuarios hubieran encendido las
+máquinas a las 8:00 de la mañana, se iniciaría la actualización a
+LibreOffice automáticamente pudiéndose producir muchas incidencias.
+¿Funcionaría todo? ¿No es mejor probar LibreOffice en tu organización
+antes de que se instale en todos tus equipos?</p>
+<p>Tener la posibilidad de deshacer un cambio que se haya determinado como
+no deseado es importante.</p>
+<p>Tienes que decidir por ti mismo el software que deben tener tus usuarios
+y, por tanto, debes tener los gestores de paquetes configurados contra
+tus propios repositorios de paquetes y gestionarlos de alguna manera.</p>
+<p>Además, es conveniente que puedas planificar a quién y cuándo se deben
+liberar dichos cambios.</p>
+<p>Imagina nuevamente el ejemplo de la sustitución de OpenOffice por
+LibreOffice. Estaríamos hablando de una actualización de cerca de 500 MB
+por equipo que, multiplicado por todos los equipos de una organización,
+podría resultar en mucho tráfico de red.</p>
+<p>Una ventaja de planificar la liberación es que permite distribuir poco a
+poco los cambios, de tal manera que, si hay errores, afectará
+inicialmente a muy pocos equipos, permitiendo actuar de manera más
+relajada para corregir cualquier incidencia.</p>
+<p>Por todo esto, y como los repositorios estándar de las distribuciones no
+tienen ningún mecanismo de planificación de la liberación, es por lo que
+decidimos desarrollar migasfree, extendiendo el concepto de repositorio
+de paquetes al concepto de despliegue: repositorio de paquetes dinámico
+y planificable.</p>
+<h3 id="despliegue-migasfree">Despliegue Migasfree</h3>
+<p>Un despliegue de migasfree es, simplemente, un repositorio estándar más
+la capacidad de poder especificar, de forma centralizada, cuándo y quién
+accede a ese repositorio.</p>
+<p>Veamos como actúa migasfree en lo relativo a los repositorios:</p>
+<ol>
+<li>
+<p>Los cambios que se quieren liberar son empaquetados y subidos a un
+  servidor migasfree.</p>
+</li>
+<li>
+<p>Se crea un despliegue con los paquetes subidos y se establece a quién
+  (atributos de usuario + equipo) y en qué momento se deben aplicar dichos
+  cambios.</p>
+</li>
+<li>
+<p>El servidor migasfree crea un repositorio físico (idéntico al de
+  cualquier distribución GNU/Linux) con dichos paquetes, utilizando las
+  herramientas estándar de creación de repositorios (<code>createrepo</code> para
+  paquetería RPM o <code>dpkg-scanpackages</code> para paquetería Debian).</p>
+</li>
+<li>
+<p>Cuando un cliente migasfree se conecta al servidor envía sus
+  atributos al servidor.</p>
+</li>
+<li>
+<p>El servidor consulta los despliegues para determinar, en función de
+  esos atributos enviados, la lista de los repositorios físicos que tiene
+  el cliente a su disposición y se los envía al cliente.</p>
+</li>
+<li>
+<p>El cliente migasfree configura la lista de los repositorios físicos
+  recibidos desde el servidor en el Gestor de Paquetes.</p>
+</li>
+<li>
+<p>A continuación, el cliente migasfree da instrucciones al Gestor de
+  Paquetes para que se produzca la eliminación, instalación y
+  actualización de los paquetes desde los repositorios físicos.</p>
+</li>
+</ol>
+<h3 id="la-gcs-en-tu-organizacion">La GCS en tu organización</h3>
+<p>En el capítulo anterior, hemos visto el proceso de la GCS en los
+distintos proyectos de software libre y también en las distribuciones
+GNU/Linux.</p>
+<p>Pues bien, en una organización también debe realizarse el proceso de la
+GCS.</p>
+<p><img alt="Proceso GCS en tu organización con migasfree" class="center" src="../img/scm_process.png" /></p>
+<p><em class="center">Proceso GCS en tu organización con migasfree</em></p>
+<ol>
+<li>Un usuario hace una petición de cambio.</li>
+<li>Un desarrollador programa el cambio de la configuración software dentro de un paquete y lo sube a un servidor migasfree.</li>
+<li>La liberación es realizada por el servidor migasfree a los ordenadores requeridos.</li>
+</ol>
+<p>En AZLinux realizamos nuestra propia GCS y vemos como, de nuevo, se
+repiten las mismas actividades: petición de cambio, cambio y liberación.</p>
+<p>Usamos dos tipos de peticiones de cambio:</p>
+<p><img alt="Peticiones de cambio" class="center" src="../img/diagrama1.png" /></p>
+<p><em class="center">Peticiones de cambio</em></p>
+<ul>
+<li>
+<p><strong>Actualización de aplicaciones</strong>. Si por ejemplo recibimos una
+    petición para actualizar Mozilla Firefox, descargamos desde los
+    repositorios de la distribución la versión deseada. La probamos en
+    laboratorio registrando cualquier información relevante en la
+    petición de cambio. Finalmente, si todo es correcto, se liberan los
+    paquetes a través de un despliegue migasfree planificando su
+    distribución (ver A en el diagrama 'Peticiones de cambio').</p>
+</li>
+<li>
+<p><strong>Personalización de aplicaciones</strong>. Se produce por ejemplo cuando
+    llega una petición de cambio para añadir un motor de búsqueda de sinónimos
+    a Mozilla Firefox. Introducimos entonces en un paquete propio de
+    AZLinux (azl-firefox) el código que instala dicho motor de búsqueda
+    y liberamos dicho paquete en un despliegue de migasfree planificando
+    su distribución (ver B en el diagrama 'Peticiones de cambio').</p>
+</li>
+</ul>
+<p>Las herramientas que usamos actualmente en cada actividad son:</p>
+<ul>
+<li>
+<p>En la petición de cambio:</p>
+<ul>
+<li>Gestor de proyectos: <a href="http://www.redmine.org/">Redmine</a></li>
+</ul>
+</li>
+<li>
+<p>En el cambio:</p>
+<ul>
+<li>Editor de textos: <a href="http://www.geany.org/">Geany</a></li>
+<li>IDE: <a href="https://www.jetbrains.com/pycharm/">PyCharm</a></li>
+<li>Sistema de control de versiones:
+  <a href="https://github.com/gitlabhq/gitlabhq">GitLab</a></li>
+<li>Gestor de proyectos: <a href="http://www.redmine.org/">Redmine</a></li>
+</ul>
+</li>
+<li>
+<p>En la liberación:</p>
+<ul>
+<li>Gestor de sistemas: <a href="http://migasfree.org">Migasfree</a></li>
+<li>Gestor de proyectos: <a href="http://www.redmine.org/">Redmine</a></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">nota</p>
+<p>Migasfree nos proporciona, de manera centralizada, conocer el
+estado, no sólo del servidor migasfree, sino de cada uno de los
+equipos registrados en el servidor, convertiéndose en una
+herramienta ideal para hacer una auditoría tanto de software como
+de hardware.</p>
+</div>
+<h4 id="beneficios">Beneficios</h4>
+<p>Los principales beneficios que obtendrá tu empresa, como resultado de
+aplicar una GCS, serían:</p>
+<ol>
+<li>Reducción del coste de los servicios de desarrollo y mantenimiento.</li>
+<li>Optimización del uso de los recursos.</li>
+</ol>
+<p>Y para ti, como administrador:</p>
+<ol>
+<li>Dispondrás de equipos más estables.</li>
+<li>Vas a pasar de ser un administrador que se echa las manos a la
+    cabeza ante cualquier cambio a ser un administrador favorecedor del
+    cambio, ya que dispones de las herramientas para hacer el seguimento
+    y control de los cambios.</li>
+<li>Y, en última instancia, vas a mejorar sustancialmente la resolución
+    de incidencias.</li>
+</ol>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:2">
+<p>En AZLinux empleamos como nombre de paquete el prefijo "azl-" más
+el nombre del paquete que queremos personalizar.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2013-2020 Alberto Gacías
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.a0c4167b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fb26dd1d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
