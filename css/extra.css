@@ -31,7 +31,44 @@ ul.nav li.main{
     font-size: 36px;
 }
 
-#.codehilite pre{
-#    background-color: #f5f5f5;
-#}
+.md-header {
+    background-color: #212121;
+}
 
+
+.md-typeset__table {
+   min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+   display: table;
+}
+
+.admonition.info {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.admonition.note {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+@page {
+    size: a4 portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: pre;
+    @top-left {
+        #content: string(chapter);
+    }
+    @top-right {
+        #font-size: 8px;
+        #content: counter(page);
+    }
+    @bottom-center {
+        font-size: 8px;
+        content: 'fun with migasfree';
+    }
+}

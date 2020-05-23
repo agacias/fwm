@@ -1,0 +1,1813 @@
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manual de migasfree">
+      
+      
+      
+        <meta name="author" content="Alberto Gacías">
+      
+      <link rel="shortcut icon" href="../../img/logo.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.6">
+    
+    
+      
+        <title>La configuración del sistema migasfree - fun with migasfree</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b9ffd7b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#la-configuracion-del-sistema-migasfree" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Cabecera">
+    <a href="../.." title="fun with migasfree" class="md-header-nav__button md-logo" aria-label="fun with migasfree">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            fun with migasfree
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              La configuración del sistema migasfree
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="fun with migasfree" class="md-nav__button md-logo" aria-label="fun with migasfree">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    fun with migasfree
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../sobre/" title="Sobre este libro" class="md-nav__link">
+      Sobre este libro
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Introducción
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Introducción" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Introducción
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part1/gcs/" title="Gestión de la Configuración Software" class="md-nav__link">
+      Gestión de la Configuración Software
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part1/admin/" title="Administrando escritorios" class="md-nav__link">
+      Administrando escritorios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part1/caracteristicas/" title="Caracteristicas de migasfree" class="md-nav__link">
+      Caracteristicas de migasfree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Primeros pasos
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Primeros pasos" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Primeros pasos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part2/probando_migasfree/" title="Probando migasfree" class="md-nav__link">
+      Probando migasfree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part2/config_soft/" title="Configurando software al estilo migasfree" class="md-nav__link">
+      Configurando software al estilo migasfree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part2/config_migasfree_client/" title="Configurando migasfree-client" class="md-nav__link">
+      Configurando migasfree-client
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Guía de uso
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Guía de uso" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Guía de uso
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../admin_interface/" title="El interfaz de administración" class="md-nav__link">
+      El interfaz de administración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        La configuración del sistema migasfree
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="La configuración del sistema migasfree" class="md-nav__link md-nav__link--active">
+      La configuración del sistema migasfree
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#formulas" class="md-nav__link">
+    Fórmulas
+  </a>
+  
+    <nav class="md-nav" aria-label="Fórmulas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-la-formula" class="md-nav__link">
+    Campos de la Fórmula
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulas-especificas" class="md-nav__link">
+    Fórmulas específicas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorias-de-etiquetas" class="md-nav__link">
+    Categorías de etiquetas
+  </a>
+  
+    <nav class="md-nav" aria-label="Categorías de etiquetas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-categorias-de-etiquetas" class="md-nav__link">
+    Campos de categorías de etiquetas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conjuntos-de-atributos" class="md-nav__link">
+    Conjuntos de Atributos
+  </a>
+  
+    <nav class="md-nav" aria-label="Conjuntos de Atributos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-conjuntos-de-atributos" class="md-nav__link">
+    Campos de Conjuntos de Atributos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicion-de-fallas" class="md-nav__link">
+    Definición de Fallas
+  </a>
+  
+    <nav class="md-nav" aria-label="Definición de Fallas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-definicion-de-falla" class="md-nav__link">
+    Campos de Definición de Falla
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-autocomprobables" class="md-nav__link">
+    Errores autocomprobables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consultas" class="md-nav__link">
+    Consultas
+  </a>
+  
+    <nav class="md-nav" aria-label="Consultas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-consulta" class="md-nav__link">
+    Campos de consulta
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proyectos" class="md-nav__link">
+    Proyectos
+  </a>
+  
+    <nav class="md-nav" aria-label="Proyectos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-del-proyecto" class="md-nav__link">
+    Campos del proyecto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistemas-de-gestion-de-paquetes" class="md-nav__link">
+    Sistemas de gestión de paquetes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plataformas" class="md-nav__link">
+    Plataformas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perfiles-de-usuario-migasfree" class="md-nav__link">
+    Perfiles de usuario Migasfree
+  </a>
+  
+    <nav class="md-nav" aria-label="Perfiles de usuario Migasfree">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuarios-por-defecto" class="md-nav__link">
+    Usuarios por defecto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-perfiles-de-usuarios-migasfree" class="md-nav__link">
+    Campos de Perfiles de usuarios migasfree
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambio-de-contrasena" class="md-nav__link">
+    Cambio de contraseña
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grupos-de-usuarios" class="md-nav__link">
+    Grupos de Usuarios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dominios" class="md-nav__link">
+    Dominios
+  </a>
+  
+    <nav class="md-nav" aria-label="Dominios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-dominio" class="md-nav__link">
+    Campos de dominio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caracteristicas-del-usuario-administrador-de-dominio" class="md-nav__link">
+    Características del usuario administrador de dominio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento-de-creacion-de-un-dominio" class="md-nav__link">
+    Procedimiento de creación de un dominio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambitos" class="md-nav__link">
+    Ámbitos
+  </a>
+  
+    <nav class="md-nav" aria-label="Ámbitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-ambitos" class="md-nav__link">
+    Campos de Ámbitos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#formulas" class="md-nav__link">
+    Fórmulas
+  </a>
+  
+    <nav class="md-nav" aria-label="Fórmulas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-la-formula" class="md-nav__link">
+    Campos de la Fórmula
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulas-especificas" class="md-nav__link">
+    Fórmulas específicas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorias-de-etiquetas" class="md-nav__link">
+    Categorías de etiquetas
+  </a>
+  
+    <nav class="md-nav" aria-label="Categorías de etiquetas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-categorias-de-etiquetas" class="md-nav__link">
+    Campos de categorías de etiquetas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conjuntos-de-atributos" class="md-nav__link">
+    Conjuntos de Atributos
+  </a>
+  
+    <nav class="md-nav" aria-label="Conjuntos de Atributos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-conjuntos-de-atributos" class="md-nav__link">
+    Campos de Conjuntos de Atributos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicion-de-fallas" class="md-nav__link">
+    Definición de Fallas
+  </a>
+  
+    <nav class="md-nav" aria-label="Definición de Fallas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-definicion-de-falla" class="md-nav__link">
+    Campos de Definición de Falla
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-autocomprobables" class="md-nav__link">
+    Errores autocomprobables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consultas" class="md-nav__link">
+    Consultas
+  </a>
+  
+    <nav class="md-nav" aria-label="Consultas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-consulta" class="md-nav__link">
+    Campos de consulta
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proyectos" class="md-nav__link">
+    Proyectos
+  </a>
+  
+    <nav class="md-nav" aria-label="Proyectos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-del-proyecto" class="md-nav__link">
+    Campos del proyecto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistemas-de-gestion-de-paquetes" class="md-nav__link">
+    Sistemas de gestión de paquetes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plataformas" class="md-nav__link">
+    Plataformas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perfiles-de-usuario-migasfree" class="md-nav__link">
+    Perfiles de usuario Migasfree
+  </a>
+  
+    <nav class="md-nav" aria-label="Perfiles de usuario Migasfree">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuarios-por-defecto" class="md-nav__link">
+    Usuarios por defecto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-perfiles-de-usuarios-migasfree" class="md-nav__link">
+    Campos de Perfiles de usuarios migasfree
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambio-de-contrasena" class="md-nav__link">
+    Cambio de contraseña
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grupos-de-usuarios" class="md-nav__link">
+    Grupos de Usuarios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dominios" class="md-nav__link">
+    Dominios
+  </a>
+  
+    <nav class="md-nav" aria-label="Dominios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-dominio" class="md-nav__link">
+    Campos de dominio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caracteristicas-del-usuario-administrador-de-dominio" class="md-nav__link">
+    Características del usuario administrador de dominio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento-de-creacion-de-un-dominio" class="md-nav__link">
+    Procedimiento de creación de un dominio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambitos" class="md-nav__link">
+    Ámbitos
+  </a>
+  
+    <nav class="md-nav" aria-label="Ámbitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-de-ambitos" class="md-nav__link">
+    Campos de Ámbitos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="la-configuracion-del-sistema-migasfree">La configuración del sistema migasfree<a class="headerlink" href="#la-configuracion-del-sistema-migasfree" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>El hombre razonable se adapta al mundo; el irrazonable intenta
+adaptar el mundo a sí mismo. Así pues, el progreso depende del
+irrazonable.</p>
+<p>-- George Bernard Shaw</p>
+</blockquote>
+<p>En capítulos anteriores, has aprendido a instalar el servidor y el
+cliente migasfree, así como a crear paquetes. La creación de paquetes no
+es una tarea trivial, no tanto por su construcción en sí, sino por el
+hecho de que son necesarios amplios conocimientos de los sistemas
+operativos y de las aplicaciones.</p>
+<p>En este y en los siguientes tres capítulos, vas a aprender a adaptar y
+usar el servidor <em>migasfree</em>.</p>
+<div id=serverclientproperty></div>
+
+<div id=Fórmulas></div>
+
+<h2 id="formulas">Fórmulas<a class="headerlink" href="#formulas" title="Permanent link">&para;</a></h2>
+<p>En <em>migasfree</em>, una <code>fórmula</code> es una característica de los equipos o de
+los usuarios, y que nos servirá para desplegar los paquetes.</p>
+<p>Como administrador de <em>migasfree</em>, una de las primeras tareas que debes
+realizar es definir estas fórmulas. Debes preguntarte en función de qué
+características vas a realizar los despliegues. Por ejemplo, ¿te
+interesa desplegar los paquetes por el HOSTNAME de los equipos?, ¿y por
+subred? ¿Qué tal por el grupo al que pertenece el usuario en el LDAP? ¿O
+por su contexto LDAP?</p>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>En AZLinux, usamos principalmente el contexto LDAP al que pertenece el
+usuario para desplegar los cambios por los distintos servicios o
+departamentos de nuestro ayuntamiento, y en menor medida usamos
+también el CID.</p>
+</div>
+<p>Una <code>fórmula</code> es un código que se programa en un registro de la base de
+datos de <em>migasfree</em>. Estas fórmulas serán ejecutadas en cada uno de los
+clientes <em>migasfree</em> y sus valores de retorno serán devueltos al
+servidor como <code>atributos</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>El <code>atributo</code> es el valor concreto que toma una <code>fórmula</code> al ser
+ejecutada en un equipo.</p>
+</div>
+<p>Veamos un ejemplo sencillo de todo esto con la fórmula <em>MACHINE NAME</em>.
+Accede a la web de tu servidor <em>migasfree</em> y ve a
+<code>Configuración-Fórmulas-MACHINE NAME</code>. En este registro, verás el
+siguiente código escrito en <code>python</code>.</p>
+<pre><code>import platform
+print(platform.node())
+</code></pre>
+
+<p>Si ejecutas <code>python</code> en una consola y escribes estas dos líneas, verás
+que <em>python</em> muestra, por la salida estándar, el nombre de tu equipo.</p>
+<pre><code>$ python
+Python 2.7.3 (default, Apr 10 2013, 05:46:21)
+[GCC 4.6.3] on linux2
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import platform
+&gt;&gt;&gt; print platform.node()
+white
+</code></pre>
+
+<p>En mi caso me ha devuelto <code>white</code>, que es el nombre de mi portátil. ¿A
+que no aciertas de qué color es?</p>
+<p>Esto es, en definitiva, lo que hace el cliente <em>migasfree</em>: obtiene del
+servidor la fórmula <code>MACHINE NAME</code> (su código), la ejecuta y devuelve al
+servidor el resultado como atributo (<code>HST-white</code>).</p>
+<p>Podrías haber escrito la fórmula también en código <code>bash</code> simplemente
+llamando al comando de Linux <code>hostname</code> o escribiendo <code>echo $HOSTNAME</code>
+(el resultado sería el mismo), pero utilizar código <code>python</code> nos
+permite, en este caso, usar la misma <code>fórmula</code> también para plataformas
+Windows o Mac OS.</p>
+<h3 id="campos-de-la-formula">Campos de la Fórmula<a class="headerlink" href="#campos-de-la-formula" title="Permanent link">&para;</a></h3>
+<p>Observa cada uno de los campos de la <em>fórmula</em>:</p>
+<ul>
+<li><strong>Prefijo</strong>: Es una combinación de tres números o letras. Este
+    prefijo se utiliza para agrupar e identificar los atributos.</li>
+<li><strong>Nombre</strong>: Denomina a la fórmula.</li>
+<li><strong>Habilitado</strong>: Indica si está activa la fórmula. Si no está
+    marcado, la fórmula no será ejecutada en los clientes.</li>
+<li><strong>Lenguaje de programación</strong>: En el que está escrito el código de la
+    fórmula.</li>
+<li><strong>Código</strong>: Instrucciones a ejecutar en los clientes para obtener
+    <code>atributos</code>.</li>
+<li>
+<p><strong>Clase</strong>: Hay cuatro tipos de clases y que nos permiten tratar el
+    valor devuelto por la fórmula de diferentes maneras:</p>
+<ul>
+<li>
+<p><strong>Normal</strong>. El valor devuelto por la fórmula viene con el
+      siguiente formato:</p>
+<p><code>&lt;valor&gt;~&lt;Descripción&gt;</code></p>
+<p>o, simplemente, como:</p>
+<p><code>&lt;valor&gt;</code></p>
+</li>
+<li>
+<p><strong>Lista</strong>: El valor al ejecutar la fórmula en el cliente es
+      una <code>lista de atributos</code> separados por una coma. Puedes ver un
+      ejemplo en la fórmula <code>PCI</code>. Su formato es:</p>
+<p><code>&lt;valor&gt;~&lt;Descripción&gt;, ...</code></p>
+</li>
+<li>
+<p><strong>Añadir por la derecha</strong>: Permite añadir atributos de la
+      siguiente manera: Si el valor devuelto por la fórmula es
+      \"CONTEXTO1.CONTEXTO2.MIEMPRESA\", el servidor interpreta que
+      el equipo tiene estos tres atributos:</p>
+<ul>
+<li>MIEMPRESA</li>
+<li>CONTEXTO2.MIEMPRESA</li>
+<li>CONTEXTO1.CONTEXTO2.MIEMPRESA</li>
+</ul>
+<p>Se utiliza esta clase para crear atributos relacionados con
+  LDAP.</p>
+</li>
+<li>
+<p><strong>Añadir por la izquierda</strong>. Lo mismo que la anterior, pero
+      agregando por la izquierda.</p>
+<ul>
+<li>CONTEXTO1</li>
+<li>CONTEXTO1.CONTEXTO2</li>
+<li>CONTEXTO1.CONTEXTO2.MIEMPRESA</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Añadir automáticamente</strong>: Si este campo está marcado, los nuevos
+    atributos serán añadidos automáticamente a la base de datos de
+    migasfree. En caso contrario es el administrador de migasfree el
+    responsable de añadir manualmente los atributos para esta fórmula.
+    Se pueden añadir atributos manualmente accediendo a
+    <code>Datos-Atributos</code>.</p>
+</li>
+</ul>
+<div id="Fórmulas específicas"></div>
+
+<h3 id="formulas-especificas">Fórmulas específicas<a class="headerlink" href="#formulas-especificas" title="Permanent link">&para;</a></h3>
+<p>Existen unas fórmulas predefinidas que tienen unos objetivos muy
+concretos y que no pueden ser eliminadas del sistema. Lo más
+característico de ellas es que <strong>no son ejecutadas en el cliente</strong> sino
+en el servidor.</p>
+<ul>
+<li><strong>SET</strong>: Esta fórmula tiene un atributo llamado <code>SET-ALL SYSTEMS</code>.
+    Todos los ordenadores tendrán este atributo sin excepción. Sirve
+    para referirse a <strong>todos</strong> los ordenadores. Por ejemplo, si en un
+    despliegue asignas este atributo, todos los ordenadores tendrán
+    acceso a él. Es habitual usarlo también en la última demora de un
+    calendario. Esta fórmula, además, se usa internamente para definir
+    <code class="interpreted-text" role="ref">Conjuntos de Atributos</code>.</li>
+<li>
+<p><strong>CID</strong>: <em>Computer Identificator</em>. Esta fórmula generará un atributo
+    que es igual al campo <code>id</code> de la tabla <code>computer</code> de la Base de
+    Datos de migasfree.</p>
+<p>Dicho atributo <code>CID</code> es único por cada ordenador y se utiliza en
+lugar de referirse al <code>UUID</code> de la placa base de un ordenador siendo
+<strong>el más recomendado</strong> para señalar a un ordenador en concreto
+(procesos como el <code>Reemplazo de ordenadores</code>{.interpreted-text
+role="ref"} tienen en cuenta este atributo).</p>
+<p>Por ejemplo, un atributo <code>CID-572</code> se correspondería con el <code>UUID</code>
+5FD85780-9BC9-11E3-91B8-F0921CF3678D.</p>
+<p>El ajuste <code>MIGASFREE_COMPUTER_SEARCH_FIELDS</code>{.interpreted-text
+role="ref"} del servidor, permite configurar búsquedas por otros
+campos del ordenador a la hora de asignar un determinado <code>CID</code> en el
+servidor migasfree.</p>
+<p>Cuando un ordenador pasa a un estado <code>Baja</code> o a <code>Disponible</code> todos
+sus <code>CID</code> asignados en el sistema son eliminados. Ver campo <code>estado</code>
+de <code class="interpreted-text" role="ref">Ordenadores</code>.</p>
+<p>El <code>CID</code> aparece por defecto en la etiqueta del ordenador que
+muestra el comando <code>migasfree-label</code>.</p>
+</li>
+</ul>
+<div id="serverserverproperty"></div>
+
+<div id="Categorías de etiquetas"></div>
+
+<h2 id="categorias-de-etiquetas">Categorías de etiquetas<a class="headerlink" href="#categorias-de-etiquetas" title="Permanent link">&para;</a></h2>
+<p>Hasta ahora, has visto que una fórmula es un código que se ejecuta en
+el cliente para obtener un atributo automáticamente. Ahora bien,
+pueden existir casos en que no se puede obtener automáticamente estos
+atributos. Imagina que quieres "etiquetar" ciertos equipos según la
+funcionalidad que van a realizar (tratamiento gráfico, administración,
+aula, etc.). Esto no es algo que, a priori, se pueda programar.</p>
+<p>En migasfree existe la posibilidad de crear estas etiquetas y
+asignarlas manualmente a los equipos tal y como harías con una
+etiqueta física que pegas a un ordenador.</p>
+<p>Una etiqueta no ejecutará ningún código en el cliente. Es el propio
+registro del ordenador en el servidor de migasfree quien lleva
+asignadas, manualmente, estas etiquetas. A todos los efectos, una
+etiqueta es un atributo más del sistema y, por tanto, te permitirá
+hacer el despliegue también en función de ellas.</p>
+<p>Por cada <code>Configuración-Categorías de etiquetas</code>, existirá un conjunto
+de etiquetas que manualmente debes añadir en <code>Datos-Etiquetas</code>. Una
+vez añadidas, puedes asignarlas a <code>Datos-Ordenadores</code>. También puedes
+editar <code>Datos-Etiquetas</code> y asignarle un conjunto de ordenadores.</p>
+<p>Existe en el cliente el comando <code>migasfree-tags</code> que permite consultar
+y asignar etiquetas desde el propio cliente.</p>
+<p>Para obtener el conjunto de etiquetas que pueden ser asignadas a un
+ordenador ejecuta:</p>
+<pre><code>migasfree-tags --available
+</code></pre>
+
+<p>Para consultar las etiquetas asignadas a un ordenador ejecuta:</p>
+<pre><code class="c">migasfree-tags --get
+</code></pre>
+
+<p>Para asignar etiquetas al equipo, seleccionando manualmente las
+etiquetas entre las disponibles en el sistema, ejecuta:</p>
+<pre><code>migasfree-tags --set
+</code></pre>
+
+<p>Para asignar determinadas etiquetas a un equipo, escribe las etiquetas
+separadas por espacios:</p>
+<pre><code> migasfree-tags --set &lt;ETIQUETA1&gt; &lt;ETIQUETA2&gt; ...
+</code></pre>
+
+<p>Para asignar etiquetas en el servidor migasfree pero que no se
+produzca <strong>ningún cambio de paquetes</strong> utiliza:</p>
+<pre><code>migasfree-tags --communicate &lt;ETIQUETA1&gt; &lt;ETIQUETA2&gt; ...
+</code></pre>
+
+<p>Para quitar todas las etiquetas de un equipo, ejecuta:</p>
+<pre><code>migasfree-tags --set &quot;&quot;
+</code></pre>
+
+<p>Las etiquetas están relacionadas con los campos de los despliegues:</p>
+<ul>
+<li>Paquetes pre-incluidos por defecto</li>
+<li>Paquetes incluidos por defecto</li>
+<li>Paquetes excluidos por defecto</li>
+</ul>
+<p>ya que al ejecutar el comando <code>migasfre-tags --set</code> se instalarán los
+paquetes definidos en los <code>pre-incluidos</code> e <code>incluidos</code> y se
+desinstalarán los paquetes definidos en el campo <code>excluidos</code>, siempre
+y cuando los atributos asignados al despliegue coincidan con los del
+equipo. Esto se utiliza para crear la imagen ISO de los escritorios.</p>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>En AZLinux, usamos <code>migasfree-tags</code> básicamente para, partiendo de una
+imagen ISO de Ubuntu, desinstalar e instalar los paquetes que componen
+nuestro escritorio y crear una imagen del disco para clonar.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>En Vitalinux, se emplean las etiquetas para cambiar fácilmente de
+"sabor". Cuando se quiere cambiar de "sabor" (Infantil, Primaria,
+Profes, ...), simplemente se eligen las etiquetas mediante el comando
+<code>migasfree-tag --set</code>, produciéndose automáticamente la instalación y
+desinstalación de los paquetes correspondientes. También se utiliza en
+la creación del DVD, permitiendo hacer una ISO para cada sabor o
+conjunto de sabores.</p>
+</div>
+<h3 id="campos-de-categorias-de-etiquetas">Campos de categorías de etiquetas<a class="headerlink" href="#campos-de-categorias-de-etiquetas" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Prefijo</strong>: Es una combinación de tres números o letras. Este
+    prefijo se utiliza para agrupar e identificar las etiquetas.</p>
+</li>
+<li>
+<p><strong>Nombre</strong>: Denomina el tipo de etiqueta.</p>
+</li>
+<li>
+<p><strong>Habilitado</strong>: Si no está marcado, las etiquetas de este tipo no
+    serán funcionales.</p>
+</li>
+<li>
+<p><strong>Clase</strong>: El funcionamiento es exactamente igual que en las <a href="#Fórmulas">fórmulas</a>.</p>
+<p>Un valor muy útil que puede tomar este campo es el de
+<code>añadir por la derecha</code>. Imagina que quieres agrupar los ordenadores
+por ubicación para liberar software por distintas zonas. Una forma
+de hacerlo es crear una <code>Categoría de etiqueta</code> llamada p.e.
+<code>UBICACIÓN</code> definada de clase <code>añadir por la derecha</code>. Después,
+puedes crear las <code>Etiquetas</code> de tipo <code>UBICACION</code> p.e.:</p>
+<ul>
+<li><code>UBI-PLANTA-1.SEDE_CENTRAL.MADRID</code></li>
+</ul>
+<p>Cuando un equipo con esta etiqueta asignada se conecta al servidor,
+automáticamente el servidor interpretará que tiene no una, sino tres
+etiquetas:</p>
+<ul>
+<li><code>UBI-MADRID</code></li>
+<li><code>UBI-SEDE_CENTRAL.MADRID</code></li>
+<li><code>UBI-PLANTA-1.SEDE_CENTRAL.MADRID</code></li>
+</ul>
+<p>Con lo que finalmente podemos liberar software a todo <code>MADRID</code>, a
+toda la sede central de Madrid, o solamente a la planta 1ª.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>Observa que el caracter de delimitación es el punto: <code>.</code></p>
+</div>
+<div id="serverattributeset"></div>
+
+<div id="Conjuntos de Atributos"></div>
+
+<h2 id="conjuntos-de-atributos">Conjuntos de Atributos<a class="headerlink" href="#conjuntos-de-atributos" title="Permanent link">&para;</a></h2>
+<p>En ocasiones puedes necesitar <strong>agrupar</strong> <code>Atributos</code>.</p>
+<p>Imagina que tienes muchos equipos a los que asignar una cierta
+<code>Etiqueta</code> y que te resulta pesado tener que hacerlo uno a uno. Puedes
+entonces crear un <code>Conjunto de Atributos</code>.</p>
+<p>Supón que tienes subredes con un buen ancho de banda y otras subredes
+que no, y que necesitas liberar software en función de esto. Podríamos
+crear dos <code>Conjuntos de Atributos</code>:</p>
+<pre><code>Conjunto 1:
+      Nombre:                 RED LENTA
+      Atributos asignados:    NET-192.168.1.0/24
+                              NET-192.168.8.0/24
+
+Conjunto 2:
+      Nombre:                 RED RAPIDA
+      Atributos asignados:    SET-ALL SYSTEMS
+      Atributos excluidos:    SET-RED LENTA
+</code></pre>
+
+<p>De esta manera, cualquier equipo de las subredes 192.168.1.0/24 o
+192.168.8.0/24, al ejecutar <code>migasfree -u</code>, se le asignará
+automáticamente un <code>Atributo: SET-RED LENTA</code>. Al resto de equipos se le
+asignará el <code>Atributo: SET-RED RAPIDA</code>.</p>
+<p>Ahora ya podríamos crear <code>Despliegues</code> y asignarles dichos <code>Atributos</code>.</p>
+<p>Los <code>Conjuntos de Atributos</code> no ejecutan ningún código en el cliente,
+sino que son evaluados en el servidor. Si un ordenador pertenece a un
+conjunto, se le asigna un <code>Atributo</code> con el mismo nombre que el
+<code>Conjunto de Atributos</code>.</p>
+<h3 id="campos-de-conjuntos-de-atributos">Campos de Conjuntos de Atributos<a class="headerlink" href="#campos-de-conjuntos-de-atributos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nombre</strong>: Denomina al conjunto.</li>
+<li><strong>Habilitado</strong>: Indica si el conjunto será evaluado.</li>
+<li><strong>Atributos incluidos</strong>: Lista de <code>Atributos</code> que formarán parte el
+    conjunto.</li>
+<li><strong>Atributos excluidos</strong>: Lista de <code>Atributos</code> a excluir del
+    conjunto.</li>
+</ul>
+<div id="serverfaultdefinition"></div>
+
+<div id="Fallas"></div>
+
+<h2 id="definicion-de-fallas">Definición de Fallas<a class="headerlink" href="#definicion-de-fallas" title="Permanent link">&para;</a></h2>
+<p>Una falla es un hecho negativo que se produce en un equipo cliente. Por
+ejemplo que un equipo se quede con poco espacio en la partición de
+sistema, es algo a lo que se debe prestar atención y ser solucionado
+antes de que sea tarde.</p>
+<p>Migasfree, mediante las fallas, permite lanzar código en el cliente con
+este objetivo. Fíjate que las posibilidades son inmensas y que facilita
+la <a href="https://es.wikipedia.org/wiki/Proactividad">proactividad</a>.</p>
+<p>En definitiva, una falla es un código que se ejecuta en el cliente. Si
+el código escribe algo por la salida estándar, ésta será enviada al
+servidor como <code>Falla</code>. El servidor entonces añadirá un registro de
+<code>Falla</code>, apareciendo en las <code>Alertas</code> de los usuarios de <em>migasfree</em>.</p>
+<h3 id="campos-de-definicion-de-falla">Campos de Definición de Falla<a class="headerlink" href="#campos-de-definicion-de-falla" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nombre</strong>: Denomina a la falla.</li>
+<li><strong>Habilitado</strong>: Activa o desactiva la falla.</li>
+<li><strong>Descripción</strong>: Para detallar lo que hace la falla.</li>
+<li><strong>Lenguaje de programación</strong>: Especifica en qué lenguaje está
+    escrito el <code>código</code>. Mi recomendación es que programes en la
+    medida de lo posible en <strong>python</strong>.</li>
+<li><strong>Código</strong>: Instrucciones que detectan alguna falla en los equipos
+    y que debe poner en la salida estándar un texto que indique la
+    falla producida. Puede serte útil en algunos casos poner también
+    el procedimiento a seguir.</li>
+<li><strong>Atributos incluidos</strong>: Permite asignar en qué equipos cliente
+    será efectiva la falla. Por ejemplo si escribes el código en bash,
+    deberías asignar la falla sólo a los equipos con plataforma Linux
+    <code>PLT-Linux</code>, ya que plataformas Windows no serán capaces de
+    ejecutar bash. También te puede interesar programar una falla sólo
+    para obtener información de un equipo o de un grupo de equipos.</li>
+<li><strong>Atributos excluidos</strong>: Permite excluir a ciertos equipos de la
+    ejecución de la falla.</li>
+<li><strong>Usuarios</strong>: Sirve para asignar usuarios de <em>migasfree</em> a los que
+    les aparecerán las fallas de este tipo cuando se accede desde las
+    <code>Alertas</code> (sólo se muestran las que están pendientes de comprobar
+    por el usuario autenticado).</li>
+</ul>
+<p>Si una definición de falla no tiene asignado ningún usuario, las fallas
+que se produzcan aparecerán a cualquier usuario autenticado.</p>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>Poder ejecutar código en los clientes proporciona una gran potencia
+para realizar cualquier cosa. Usa esta capacidad con responsabilidad y
+sé meticuloso en las comprobaciones antes de activar cualquier falla.</p>
+</div>
+<div id="serverautocheckerror"></div>
+
+<h2 id="errores-autocomprobables">Errores autocomprobables<a class="headerlink" href="#errores-autocomprobables" title="Permanent link">&para;</a></h2>
+<p>Por defecto, los errores producidos por el PMS, se añaden al sistema
+como no comprobados. Ahora bien, en ocasiones puede resultar tedioso
+tener que marcar como comprobados uno a uno ciertos errores que, más que
+errores, son "alertas".</p>
+<p>Para automatizar esta tarea puedes crear un <code>error autocomprobable</code>.
+Simplemente añade un registro con el <a href="https://docs.python.org/2/library/re.html#module-re">patrón de
+búsqueda</a> deseado y
+los errores que coincidan son ese patrón se marcarán automáticamente
+como comprobados.</p>
+<p>Por ejemplo, si quisieras que todos los errores que llegan del tipo:</p>
+<pre><code>2014-10-03 10:44:47
+Error: Generic error
+Info: Curl error: Couldn't resolve host 'myserver'
+</code></pre>
+
+<p>se autocomprobaran, podrías emplear el siguiente patrón:</p>
+<pre><code>.*\sError: Generic error\sInfo: Curl error: Couldn't resolve host 'myserver'
+</code></pre>
+
+<div id="serverquery"></div>
+
+<div id="Consultas"></div>
+
+<h2 id="consultas">Consultas<a class="headerlink" href="#consultas" title="Permanent link">&para;</a></h2>
+<p>Migasfree incorpora un sistema para crear consultas parametrizables.</p>
+<p>Cada consulta se programa en un registro y podrá ser ejecutada
+accediendo a <code>Consultas</code>.</p>
+<p>Hay una pocas consultas ya predefinidas, pero puedes programar nuevas o
+adaptar las que ya existen.</p>
+<h3 id="campos-de-consulta">Campos de consulta<a class="headerlink" href="#campos-de-consulta" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nombre</strong>: Denomina la consulta.</li>
+<li><strong>Descripción</strong>: Describe la consulta.</li>
+<li>
+<p><strong>Código</strong>: Instrucción en <em>Django</em> de la consulta. Mediante la
+    asignación de unas variables predeterminadas el servidor podrá
+    crear la consulta.</p>
+<p>Las variables en concreto son:</p>
+<ul>
+<li><strong>query</strong>: Conjunto de registros de la consulta.</li>
+<li><strong>fields</strong>: Lista de los campos del <em>QuerySet</em> que se
+  quieren mostrar.</li>
+<li><strong>titles</strong>: Lista de los titulos de los campos que se
+  quieren mostrar.</li>
+<li><strong>project</strong>: Sirve para obtener el proyecto del usuario y
+  poder hacer filtros cuando se requiera.</li>
+</ul>
+</li>
+<li>
+<p><strong>Parámetros</strong>: Permite la petición de parámetros de consulta. Se
+    debe crear una función que se llame <code>form_params</code> y que devuelva
+    una clase que herede de <code>ParametersForm</code>.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>Para realizar consultas, necesitarás conocer un poco los
+<a href="https://docs.djangoproject.com/en/dev/ref/models/querysets/">QuerySet</a>
+de Django y la <code>Documentación del modelo de datos</code>. Esta última la
+tienes disponible al final de todas las páginas de la aplicación,
+pulsando sobre el icono de base de datos.</p>
+</div>
+<div id="serverproject"></div>
+
+<div id="Proyectos"></div>
+
+<h2 id="proyectos">Proyectos<a class="headerlink" href="#proyectos" title="Permanent link">&para;</a></h2>
+<p>Migasfree puede trabajar con distintos Sistemas Operativos. Un
+<code>proyecto</code>, en migasfree, representa a un conjunto de ordenadores que
+comparten un mismo Sistema Operativo base.</p>
+<p>Por ejemplo, en el Ayto. de Zaragoza contamos con los siguientes
+<code>proyectos</code>:</p>
+<ul>
+<li>AZLinux-1 (SLED 10.2) Se migró a AZLinux-2 (ningún PC).</li>
+<li>AZLinux-2 (OpenSUSE 11.2) Se migró a AZLinux-12 (ningún PC).</li>
+<li>AZLinux-12 (Ubuntu 12.04) En producción (900 PC). En fase de
+  migración a otros AZLinux.</li>
+<li>AZLinux-14 (Ubuntu 14.04) En producción (500 PC).</li>
+<li>AZLinux-16 (Ubuntu 16.04). En producción (100 PC).</li>
+<li>ZA (Ubuntu 10.04 para escritorios tipo kioskos). Obsoleto.</li>
+<li>WIN-XP (Windows XP). En producción (1600 PC).</li>
+<li>AZW-10 (Windows 10). En producción (80 PC).</li>
+</ul>
+<p>Cada ordenador estará configurado en un único proyecto en un momento
+dado. Cambios de proyecto en un ordenador crean en el sistema un
+registro de <code>migración</code> automáticamente. De esta manera, es posible
+conocer las diferentes migraciones de S.O. que se han ido produciendo en
+los equipos y en qué momento se han hecho efectivas. Puedes consultar
+las migraciones accediendo a <code>Datos-Migraciones</code>.</p>
+<p>Mediante el ajuste <code>MIGASFREE_AUTOREGISTER</code> se permite, o no, a los
+equipos registrar automáticamente los proyectos. Puedes consultarlo en
+<code class="interpreted-text" role="ref">Ajustes del servidor migasfree</code>.</p>
+<h3 id="campos-del-proyecto">Campos del proyecto<a class="headerlink" href="#campos-del-proyecto" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nombre</strong>: Denomina al proyecto.</li>
+<li><strong>Plataforma</strong>: a la que pertenece el proyecto.</li>
+<li><strong>Sistema de gestión de paquetes</strong>: El PMS que se utiliza en el
+    sistema operativo de este proyecto.</li>
+<li>
+<p><strong>Auto registrar ordenadores</strong>: Si está marcado, se permiten
+    registrar ordenadores desde un cliente automáticamente. En este
+    caso, sólo con que un equipo esté configurado con el proyecto, será
+    añadido automáticamente a la base datos.</p>
+<p>En caso contrario, sólo se podrán registrar ordenadores mediante el
+uso de un usuario que cuente con los permisos adecuados para añadir
+ordenadores al sistema.</p>
+</li>
+</ul>
+<div id="serverpms"></div>
+
+<h2 id="sistemas-de-gestion-de-paquetes">Sistemas de gestión de paquetes<a class="headerlink" href="#sistemas-de-gestion-de-paquetes" title="Permanent link">&para;</a></h2>
+<p>Son los distintos PMS predefinidos que vienen con migasfree.</p>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>En versiones futuras de migasfree está previsto su refactorización y
+la eliminación de este modelo de datos.</p>
+</div>
+<div id="serverplatform"></div>
+
+<h2 id="plataformas">Plataformas<a class="headerlink" href="#plataformas" title="Permanent link">&para;</a></h2>
+<p>Los proyectos se clasifican por plataformas. Las plataformas vienen
+establecidas por la función <em>python</em> <code>platform.system()</code> y, por tanto,
+sus valores pueden ser:</p>
+<ul>
+<li>Linux</li>
+<li>Unix</li>
+<li>Windows</li>
+<li>Darwin</li>
+<li>(Otras)</li>
+</ul>
+<p>Esta clasificación de los proyectos te permite realizar consultas y
+estadísticas en función de la plataforma.</p>
+<p>Mediante el ajuste <code>MIGASFREE_AUTOREGISTER</code> se permite, o no, a los
+equipos registrar automáticamente las plataformas. Puedes consultarlo en
+<code class="interpreted-text" role="ref">Ajustes del servidor migasfree</code>.</p>
+<div id="serveruserprofile"></div>
+
+<h2 id="perfiles-de-usuario-migasfree">Perfiles de usuario Migasfree<a class="headerlink" href="#perfiles-de-usuario-migasfree" title="Permanent link">&para;</a></h2>
+<p>En <em>migasfree</em> existen dos tipos de usuarios, los usuarios que
+administran <em>migasfree</em> y los usuarios que utilizan los ordenadores.
+Este apartado se refiere a los primeros.</p>
+<p>Cuando se genera la base de datos de <em>migasfree</em>, se crean 8 usuarios
+predeterminados y varios <code class="interpreted-text" role="ref">authgroup</code>:</p>
+<h3 id="usuarios-por-defecto">Usuarios por defecto<a class="headerlink" href="#usuarios-por-defecto" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>admin</code>. Tiene permisos de lectura/escritura a todas las tablas.</li>
+<li><code>packager</code>. Pertenece a los grupos <code>Reader</code> y <code>Packager</code>.</li>
+<li><code>configurator</code>. Pertenece a los grupos <code>Reader</code> y <code>Configurator</code>.</li>
+<li><code>installer</code>. Pertenece a los grupos <code>Reader</code> y <code>Device installer</code>.</li>
+<li><code>query</code>. Pertenece a los grupos <code>Reader</code> y <code>Query</code>.</li>
+<li><code>liberator</code>. Pertenece a los grupos <code>Reader</code> y <code>Liberator</code>.</li>
+<li><code>checker</code>. Pertenece a los grupos <code>Reader</code> y <code>Computer Checker</code>.</li>
+<li><code>reader</code>. Pertenece al grupo <code>Reader</code>.</li>
+</ul>
+<p>Estos usuarios tienen por defecto como contraseña su nombre, es decir,
+la contraseña de <code>admin</code> es <code>admin</code>, y lo mismo es aplicable al resto de
+usuarios.</p>
+<p>Estos usuarios son ficticios para realizar pruebas y conviene que sean
+eliminados. Se recomienda crear los usuarios reales que usarán el
+servidor <em>migasfree</em>, asignándoles los grupos de usuarios
+correspondientes.</p>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>Es importante que en un entorno de producción se deshabiliten los
+usuarios que no se vayan a utilizar o que, al menos, se les cambie la
+contraseña por motivos de seguridad.</p>
+</div>
+<h3 id="campos-de-perfiles-de-usuarios-migasfree">Campos de Perfiles de usuarios migasfree<a class="headerlink" href="#campos-de-perfiles-de-usuarios-migasfree" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nombre de usuario</strong>: Nombre de la cuenta de usuario.</li>
+<li><strong>Nombre</strong>: Nombre del usuario.</li>
+<li><strong>Apellidos</strong>: Apellidos del usuario.</li>
+<li><strong>Dirección de correo electrónico</strong>: Email.</li>
+<li><strong>Fecha de alta</strong>: Cuando se añadió el usuario al sistema.</li>
+<li><strong>Último inicio de sesión</strong>: del usuario.</li>
+<li><strong>Activo</strong>: Indica si el usuario debe ser tratado como activo.
+    Desmarca esta opción en lugar de borrar la cuenta.</li>
+<li><strong>Es superusuario</strong>: Indica que este usuario tiene todos los
+    permisos sin asignárselos explícitamente. Cuando marcamos este campo
+    estamos indicando que es un usuario <code>administrador</code>.</li>
+<li><strong>Es staff</strong>: Indica si el usuario puede entrar en
+    <code class="interpreted-text" role="ref">El interfaz de administración</code></li>
+<li><strong>Grupos</strong>: Grupos a los que pertenece el usuario.</li>
+<li><strong>Permisos de usuario</strong>: Permisos adicionales.</li>
+<li><strong>Dominios</strong>: Lista de dominios que puede administrar el usuario.</li>
+<li><strong>Dominio</strong>: Dominio que actualmente tiene selecionado el usuario en
+    <code class="interpreted-text" role="ref">El interfaz de administración</code></li>
+<li><strong>Ámbito</strong>: Ámbito que actualmente tiene selecionado el usuario en
+    <code class="interpreted-text" role="ref">El interfaz de administración</code></li>
+</ul>
+<div id="Cambio de contraseña"></div>
+
+<h3 id="cambio-de-contrasena">Cambio de contraseña<a class="headerlink" href="#cambio-de-contrasena" title="Permanent link">&para;</a></h3>
+<p>La contraseña puede ser cambiada por los usuarios pulsando en su nombre
+de usuario y que aparece arriba a la derecha en
+<code class="interpreted-text" role="ref">El interfaz de administración</code>.</p>
+<p>También puede ser modificada por otro usuario que tenga marcado el campo
+<code>Es superusuario</code>, accediendo al registro del usuario en cuestión y
+modificando directamente su campo <code>Contraseña</code>.</p>
+<p>Si un usuario olvida su contraseña, y el administrador ha configurado en
+los ajustes del servidor el <code class="interpreted-text" role="ref">email</code>, podrá
+restablecerla.</p>
+<div id="authgroup"></div>
+
+<h2 id="grupos-de-usuarios">Grupos de Usuarios<a class="headerlink" href="#grupos-de-usuarios" title="Permanent link">&para;</a></h2>
+<p>En función de las tareas que los usuarios de administración de migasfree
+pueden realizar, se establecen los siguientes grupos de usuarios.</p>
+<ul>
+<li>
+<p><code>Domain Admin</code>. Cuenta con permisos de lectura/escritura a:</p>
+<ul>
+<li>Ordenadores</li>
+<li>Despliegues</li>
+<li>Ámbitos</li>
+</ul>
+</li>
+<li>
+<p><code>Configurator</code> con permisos de lectura/escritura a:</p>
+<ul>
+<li>Fórmulas</li>
+<li>Proyectos</li>
+<li>Sistemas de gestión de paquetes (PMS)</li>
+<li>Plataformas</li>
+<li>Comprobaciones</li>
+<li>Definiciones de fallas</li>
+<li>Mensajes</li>
+<li>Sincronizaciones</li>
+<li>Mensajes del servidor</li>
+<li>Migraciones</li>
+<li>Notificaciones</li>
+</ul>
+</li>
+<li>
+<p><code>Computer Checker</code> tiene permisos de lectura/escritura a:</p>
+<ul>
+<li>Errores</li>
+<li>Fallas</li>
+<li>Mensajes</li>
+<li>Sincronizaciones</li>
+</ul>
+</li>
+<li>
+<p><code>Liberator</code>. Permisos de lectura/escritura a:</p>
+<ul>
+<li>Despliegues</li>
+<li>Calendarios</li>
+</ul>
+</li>
+<li>
+<p><code>Packager</code> cuenta con permisos de lectura/escritura a:</p>
+<ul>
+<li>Paquetes</li>
+<li>Almacenes</li>
+</ul>
+</li>
+<li>
+<p><code>Query</code>. Permisos de lectura/escritura a:</p>
+<ul>
+<li>Consultas</li>
+</ul>
+</li>
+<li>
+<p><code>Device installer</code> cuenta con permisos de lectura/escritura a:</p>
+<ul>
+<li>Dispositivos</li>
+</ul>
+</li>
+<li>
+<p><code>Reader</code>. Permisos de sólo lectura a todas las tablas.</p>
+</li>
+</ul>
+<div id="serverdomain"></div>
+
+<div id="Dominios"></div>
+
+<h2 id="dominios">Dominios<a class="headerlink" href="#dominios" title="Permanent link">&para;</a></h2>
+<p>En migasfree llamanos <code>dominio</code> a un conjunto de ordenadores.</p>
+<p>Mientras que un usuario <code>administrador</code> ve a todos y cada uno de los
+ordenadores del sistema, un usuario <code>administrador de dominio</code> sólo va a
+poder ver y trabajar con los ordenadores del dominio que administra.</p>
+<p>Un ejemplo típico de uso de <code>administrador de dominio</code> sería el de una
+empresa con varias delegaciones donde se requiere que un determinado
+usuario pueda administrar sólo los ordenadores de una de las
+delegaciones, siendo el resto de ordenadores y sus datos "invisibles"
+para él.</p>
+<p>Sólo un usuario <code>administrador</code> puede crear y editar dominios
+asignándoles usuarios <code>administradores de dominio</code>.</p>
+<p>Un <code>administrador de dominio</code> puede administrar varios <code>dominios</code>.</p>
+<h3 id="campos-de-dominio">Campos de dominio<a class="headerlink" href="#campos-de-dominio" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nombre</strong>: Denomina al dominio.</li>
+<li><strong>Comentario</strong>: Describe al dominio.</li>
+<li><strong>Atributos incluidos</strong>: Aqui se establecen mediante atributos los
+    ordenadores que formarán parte del dominio.</li>
+<li><strong>Atributos excluidos</strong>: Permite excluir ordenadores.</li>
+<li><strong>Etiquetas</strong>: Especifica que etiquetas serán visibles al ejecutar
+    <code>migasfree-tags -s</code> el el cliente para los ordenadores que
+    pertenezcan al dominio</li>
+<li><strong>Administradores</strong>: Lista de usuarios
+    <code>administradores de dominio</code> que administran el dominio</li>
+</ul>
+<h3 id="caracteristicas-del-usuario-administrador-de-dominio">Características del usuario administrador de dominio<a class="headerlink" href="#caracteristicas-del-usuario-administrador-de-dominio" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Ve sólo los datos relativos al <code>dominio</code> que tiene seleccionado en
+  <code class="interpreted-text" role="ref">El interfaz de administración</code>.</li>
+<li>
+<p>Pertenece al grupo de usuarios <code>Domain Admin</code> que establece las
+  siguientes restricciones por defecto:</p>
+<ul>
+<li>Puede crear <strong>despliegues en el dominio</strong> con objeto de
+  instalar, actualizar o eliminar paquetes en ese dominio, pero
+  no puede subir nuevos paquetes ni modificar despliegues de
+  otros dominios.</li>
+<li>Puede definir dispositivos pero no modelos de dispositivos.</li>
+<li>No puede modificar Formulas, Categorias de Etiquetas, ni
+  Definiciones de Fallas.</li>
+</ul>
+</li>
+<li>
+<p>No es un <code>superusuario</code>. Ver <code>serveruserprofile</code>{.interpreted-text
+    role="ref"}</p>
+</li>
+</ul>
+<p>El administrador de dominio debe colaborar estrechamente con el
+administrador para no duplicar configuraciones y crear definiciones
+generalistas en la medida de lo posible. Piensa que un <code>administrador</code>
+puede querer p.e. desinstalar obligatoriamente una determinada
+aplicación a todos los equipos y entrar en conflicto con un
+<code>administrador de dominio</code> que desea instalarla, en este caso se
+instalará y desinstalará continuamente la aplicación. Ten cuidado con
+esto.</p>
+<h3 id="procedimiento-de-creacion-de-un-dominio">Procedimiento de creación de un dominio<a class="headerlink" href="#procedimiento-de-creacion-de-un-dominio" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Antes de crear el dominio debemos <strong>crear las etiquetas</strong> que van
+     a estar disponibles en el dominio. Ve a "datos-etiquetas" y
+     añádelas.</p>
+<p>Supongamos que queremos crear el dominio "INSTITUTO GOYA" con la
+ siguiente estructura:</p>
+<ul>
+<li>
+<p>GOYA</p>
+<blockquote>
+<p>AULA</p>
+<blockquote>
+<p>A</p>
+<p>B</p>
+<p>LABORATORIO</p>
+</blockquote>
+<p>ADMINISTRACION</p>
+<blockquote>
+<p>SALA PROFESORES</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<p>las etiquetas que se deben crear son:</p>
+<ul>
+<li>
+<p><code>DMN-GOYA.AULA</code></p>
+</li>
+<li>
+<p><code>DMN-GOYA.AULA.A</code></p>
+</li>
+<li>
+<p><code>DMN-GOYA.AULA.B</code></p>
+</li>
+<li>
+<p><code>DMN-GOYA.AULA.LABORATORIO</code></p>
+</li>
+<li>
+<p><code>DMN-GOYA.ADMINISTACION</code></p>
+</li>
+<li>
+<p><code>DMN-GOYA.ADMINISTACION.SALA_PROFESORES</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Añadir el dominio</strong>.</p>
+<ul>
+<li>Nombre</li>
+<li>Comentario</li>
+<li>Atributos: Añadirlos si se conocen, si no se puede dejar en
+    blanco para añadirlos más tarde.</li>
+<li>Asignar las tags creadas en el paso anterior.</li>
+<li>Administradores de dominio: Si ya los has dado de alta,
+    añádelos.</li>
+</ul>
+</li>
+<li>
+<p><strong>Registrar los ordenadores</strong> al dominio.</p>
+<ul>
+<li>
+<p>OPCION A. Cuando eres un usuario <code>administrador</code>.</p>
+<ul>
+<li>Se añade el equipo al dominio. (Ir al dominio y
+    asignar en <code>atributos incluidos</code> el CID)</li>
+<li>Se asigna cualquiera de las etiquetas del dominio (o
+    varias) en el ordenador.</li>
+</ul>
+</li>
+<li>
+<p>OPCION B. Cuando eres un usuario <code>administrador de dominio</code></p>
+<ul>
+<li>
+<p>Ejecutar el siguiente comando en el ordenador y
+  automáticamente éste se registrará en el dominio que
+  tenga seleccionado en
+ <code>El interfaz de administración</code>{.interpreted-text
+ role="ref"} en ese momento el administrador de
+ dominio.</p>
+<p><code>migasfree -g --user=&lt;user_admin_domain&gt;</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div id="serverscope"></div>
+
+<div id="Ambitos"></div>
+
+<h2 id="ambitos">Ámbitos<a class="headerlink" href="#ambitos" title="Permanent link">&para;</a></h2>
+<p>Un ámbito en migasfree es un subconjuto de ordenadores para un
+determinado dominio.</p>
+<p>Cada usuario es responsable de programarse a su antojo sus propios
+ámbitos que serán sólo accesibles por él.</p>
+<p>Cualquier usuario que tenga acceso a
+<code class="interpreted-text" role="ref">El interfaz de administración</code> va a poder
+crearse los ámbitos que desee. No es necesario que sea ni
+<code>administrador</code> ni <code>admistrador de dominio</code>.</p>
+<h3 id="campos-de-ambitos">Campos de Ámbitos<a class="headerlink" href="#campos-de-ambitos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Nombre</strong>: Indica el nombre del ámbito.</li>
+<li><strong>Dominio</strong>: Referencia al dominio en el que el ámbito se enmarca.</li>
+<li><strong>atributos incluidos</strong>: Aquí se establecen los atributos que
+    dictarán que ordenadores, del dominio seleccionado, pertenecerán al
+    ámbito.</li>
+<li><strong>atributos excluidos</strong>: Permite excluir ordenadores al ámbito.</li>
+</ul>
+<p>Los ámbitos permiten filtrar ordenadores de una manera personalizada,
+rápida y sencilla. Este filtro no tiene efecto sólo en los ordenadores,
+sino en todos los datos relacionados, incluyendo consultas y
+estadísticas.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Pie">
+        
+          <a href="../admin_interface/" title="El interfaz de administración" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                El interfaz de administración
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2013-2020 Alberto Gacías
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.a0c4167b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fb26dd1d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

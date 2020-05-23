@@ -1,0 +1,941 @@
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manual de migasfree">
+      
+      
+      
+        <meta name="author" content="Alberto Gacías">
+      
+      <link rel="shortcut icon" href="../../img/logo.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.6">
+    
+    
+      
+        <title>Configurando migasfree-client - fun with migasfree</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b9ffd7b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#Configurando" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Cabecera">
+    <a href="../.." title="fun with migasfree" class="md-header-nav__button md-logo" aria-label="fun with migasfree">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            fun with migasfree
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Configurando migasfree-client
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="fun with migasfree" class="md-nav__button md-logo" aria-label="fun with migasfree">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    fun with migasfree
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../sobre/" title="Sobre este libro" class="md-nav__link">
+      Sobre este libro
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Introducción
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Introducción" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Introducción
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part1/gcs/" title="Gestión de la Configuración Software" class="md-nav__link">
+      Gestión de la Configuración Software
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part1/admin/" title="Administrando escritorios" class="md-nav__link">
+      Administrando escritorios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part1/caracteristicas/" title="Caracteristicas de migasfree" class="md-nav__link">
+      Caracteristicas de migasfree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Primeros pasos
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Primeros pasos" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Primeros pasos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../probando_migasfree/" title="Probando migasfree" class="md-nav__link">
+      Probando migasfree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_soft/" title="Configurando software al estilo migasfree" class="md-nav__link">
+      Configurando software al estilo migasfree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Configurando migasfree-client
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Configurando migasfree-client" class="md-nav__link md-nav__link--active">
+      Configurando migasfree-client
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalando-migasfree-client-en-ubuntu" class="md-nav__link">
+    Instalando migasfree-client en Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obteniendo-acme-migasfree-client" class="md-nav__link">
+    Obteniendo acme-migasfree-client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adaptando-acme-migasfree-client" class="md-nav__link">
+    Adaptando acme-migasfree-client
+  </a>
+  
+    <nav class="md-nav" aria-label="Adaptando acme-migasfree-client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metadatos" class="md-nav__link">
+    Metadatos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripts" class="md-nav__link">
+    Scripts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecucion-del-cliente-migasfree" class="md-nav__link">
+    Ejecución del cliente migasfree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-migasfree-play" class="md-nav__link">
+    Configurando migasfree-play
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#despliegue" class="md-nav__link">
+    Despliegue
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Guía de uso
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Guía de uso" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Guía de uso
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part3/admin_interface/" title="El interfaz de administración" class="md-nav__link">
+      El interfaz de administración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../part3/system/" title="La configuración del sistema migasfree" class="md-nav__link">
+      La configuración del sistema migasfree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalando-migasfree-client-en-ubuntu" class="md-nav__link">
+    Instalando migasfree-client en Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obteniendo-acme-migasfree-client" class="md-nav__link">
+    Obteniendo acme-migasfree-client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adaptando-acme-migasfree-client" class="md-nav__link">
+    Adaptando acme-migasfree-client
+  </a>
+  
+    <nav class="md-nav" aria-label="Adaptando acme-migasfree-client">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metadatos" class="md-nav__link">
+    Metadatos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripts" class="md-nav__link">
+    Scripts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecucion-del-cliente-migasfree" class="md-nav__link">
+    Ejecución del cliente migasfree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-migasfree-play" class="md-nav__link">
+    Configurando migasfree-play
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#despliegue" class="md-nav__link">
+    Despliegue
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="Configurando" migasfree-client="migasfree-client">Configurando migasfree-client<a class="headerlink" href="#Configurando" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>La libertad no es poder elegir entre unas pocas opciones impuestas,
+sino tener el control de tu propia vida. La libertad no es elegir
+quien será tu amo, es no tener amo.</p>
+<p>-- Richard Stallman.</p>
+</blockquote>
+<p>En el capítulo anterior nos hemos centrado en cómo se realiza el proceso
+de la GCS.</p>
+<p>En este capítulo, vas a <em>configurar el cliente de migasfree</em> (mediante
+empaquetado) para que se conecte al servidor migasfree que ya debes
+tener funcionando.</p>
+<p>Todos los comandos de este capítulo los vas a ejecutar en otra máquina
+virtual, con Ubuntu instalado, y que debes tener en la misma red en la
+que esté la máquina virtual del servidor.</p>
+<p>El objetivo de este capítulo es que conozcas un poco más el empaquetado.</p>
+<h2 id="instalando-migasfree-client-en-ubuntu">Instalando migasfree-client en Ubuntu<a class="headerlink" href="#instalando-migasfree-client-en-ubuntu" title="Permanent link">&para;</a></h2>
+<p>Instala el cliente <em>migasfree</em>:</p>
+<pre><code># wget -O - http://migasfree.org/pub/install-client | bash
+</code></pre>
+
+<p>Observa como en el fichero <code>/etc/migasfree.conf</code> que ha instalado el
+paquete <code>migasfree-client</code> no hay, lógicamente, ningún ajuste
+configurado.</p>
+<pre><code>less /etc/migasfree.conf
+</code></pre>
+
+<p>A continuación, vamos a configurar este fichero haciendo uso del
+empaquetado, así que no lo hagas manualmente.</p>
+<h2 id="obteniendo-acme-migasfree-client">Obteniendo acme-migasfree-client<a class="headerlink" href="#obteniendo-acme-migasfree-client" title="Permanent link">&para;</a></h2>
+<p>Al igual que hiciste con <code>acme-test-files</code>, puedes bajarte el fuente del
+paquete que vamos a utilizar de plantilla para configurar el cliente de
+migasfree.</p>
+<p>En la nueva máquina virtual con Ubuntu, ejecuta el siguiente código si
+aún no te has descargado <code>fun-with-migasfree-examples</code>:</p>
+<pre><code>$ wget https://github.com/migasfree/fun-with-migasfree-examples/archive/master.zip
+$ unzip master.zip
+$ cd fun-with-migasfree-examples-master
+</code></pre>
+
+<h2 id="adaptando-acme-migasfree-client">Adaptando acme-migasfree-client<a class="headerlink" href="#adaptando-acme-migasfree-client" title="Permanent link">&para;</a></h2>
+<p>Accede al directorio acme-migasfree-client y observa su contenido:</p>
+<pre><code>$ cd  acme-migasfree-client
+$ ls -la
+total 20
+drwxrwxr-x 5 alberto alberto 4096 jun 18 20:54 .
+drwxrwxr-x 4 alberto alberto 4096 jun 18 21:04 ..
+drwxrwxr-x 3 alberto alberto 4096 jun 18 20:54 debian
+drwxrwxr-x 3 alberto alberto 4096 jun 18 20:54 usr
+</code></pre>
+
+<h3 id="metadatos">Metadatos<a class="headerlink" href="#metadatos" title="Permanent link">&para;</a></h3>
+<p>Observa el directorio <code>debian</code>. Este directorio es el que contiene los
+metadatos del paquete. Los ficheros más importantes en este directorio
+son:</p>
+<ul>
+<li>El fichero <code>control</code> consiste en un conjunto de campos,
+    representados en un formato común, que permiten al sistema de
+    gestión de paquetes conocer los metadatos del paquete y así poder
+    gestionarlo adecuadamente. Puedes consultar la
+    <a href="http://www.debian.org/doc/debian-policy/ch-controlfields.html">debian-policy</a>
+    para explorar el conjunto de <code>datos de control</code></li>
+<li>El fichero <code>changelog</code> contiene información, en un formato especial,
+    con las modificaciones que se han realizado en cada versión del
+    paquete. Cada vez que se modifica el paquete, hay que añadir una
+    entrada en este fichero, incrementando la versión y registrando lo
+    que se ha modificado.</li>
+<li>El fichero <code>copyright</code> contiene la información sobre los recursos,
+    licencia y derechos de autoría de las fuentes originales del
+    paquete.</li>
+<li>El fichero <code>rules</code> contiene las reglas que se utilizan para generar
+    los paquetes a partir de sus fuentes.</li>
+<li>El fichero <code>install</code> contiene una lista de ficheros que serán
+    instalados con el paquete.</li>
+</ul>
+<p>Ahora que conoces el significado de estos ficheros, modifícalos
+cambiando el nombre del paquete <code>acme-migasfree-client</code> por
+<code>tuempresa-migasfree-client</code> y pon tu nombre y la fecha actual allí
+donde se requiera.</p>
+<p>Modifica también el nombre del directorio raíz <code>acme-migasfree-client</code>
+por <code>tuempresa-migasfree-client</code>.</p>
+<h3 id="scripts">Scripts<a class="headerlink" href="#scripts" title="Permanent link">&para;</a></h3>
+<p>Observa ahora los scripts <code>postinst</code> y <code>prerm</code>. Sus nombres nos indican
+cuando serán ejecutados por el sistema de gestión de paquetes.</p>
+<ul>
+<li><code>postinst</code> inmediatamente después de que se produzca la instalación
+    del paquete.</li>
+<li><code>prerm</code> justo antes de que se produzca la eliminación del paquete.</li>
+</ul>
+<p>Observa ahora el contenido de <code>postinst</code> y verás que aquí se hace una
+llamada al comando <code>dpkg-divert</code>. Mediante este comando hacemos lo que
+se conoce como una desviación de fichero (divert). Mediante la
+desviación, indicamos al sistema de gestión de paquetes que un fichero
+ya no pertenece a un determinado paquete sino al que nosotros
+establezcamos.</p>
+<p>Así, el fichero de configuración <code>/etc/migasfree.conf</code>, que pertenece en
+principio al paquete <code>migasfree-client</code>, hacemos que pertenezca al
+paquete <code>tuempresa-migasfree-client</code> de tal manera que, una posible
+actualización de <code>migasfree-client</code> ya no nos afectará. Cada vez que
+queramos modificar un ajuste del cliente migasfree en
+<code>/etc/migasfree.conf</code>, lo haremos a través del fichero
+<code>usr/share/divert/etc/migasfree.conf</code> del paquete
+<code>tuempresa-migasfree-client</code>.</p>
+<p>Fíjate también que en <code>prerm</code> deshacemos esta desviación, para que si
+desinstalamos el paquete, quede todo como estaba.</p>
+<p>Modifica ahora el fichero <code>usr/share/divert/etc/migasfree.conf</code>. Tendrás
+que poner el ajuste <code>Server</code> con el nombre, o la IP, del servidor
+migasfree que hemos utilizado anteriormente, y el ajuste <code>Project</code> con
+el nombre de tu distribución, por ejemplo <code>ACME-1</code>. El resto de ajustes,
+modifícalos según tus intereses. Una vez hecho esto, y situado en el
+directorio <code>tuempresa-migasfree-client</code>, genera el paquete (debes tener
+el paquete <code>devscripts</code> y <code>debhelper</code> previamente instalados).</p>
+<pre><code>$ /usr/bin/debuild --no-tgz-check -us -uc
+</code></pre>
+
+<p>Con esto tendrás un paquete que configura el cliente migasfree para tu
+organización. Ahora, es momento de instalarlo:</p>
+<pre><code># dpkg -i tuempresa-migasfree-client_1.0-1_all.deb
+</code></pre>
+
+<p>Observa que al instalar el paquete, <code>dpkg</code> te informa que se añade la
+desviación de <code>/etc/migasfree.conf</code>. Comprueba ahora que el ajuste
+<code>Server</code> y <code>Project</code> son los correctos.</p>
+<pre><code># less /etc/migasfree.conf
+</code></pre>
+
+<p>Ahora ya estás preparado para registrar este ordenador en el servidor
+<em>migasfree</em>.</p>
+<pre><code># migasfree -u
+</code></pre>
+
+<p>Comprueba que en el servidor se ha creado la version <code>ACME-1</code> y que
+existe un nuevo ordenador accediendo a la página web del servidor.</p>
+<p>Finalmente, subimos el paquete a nuestro servidor migasfree con el fin
+de tenerlo disponible para su liberación a otros escritorios <code>ACME-1</code>.</p>
+<pre><code># migasfree-upload -f tuempresa-migasfree-client_1.0-1_all.deb
+</code></pre>
+
+<ul>
+<li>Introduce usuario: admin</li>
+<li>Contraseña: admin</li>
+<li>Proyecto: ACME-1</li>
+<li>Almacén: acme</li>
+</ul>
+<h2 id="ejecucion-del-cliente-migasfree">Ejecución del cliente migasfree<a class="headerlink" href="#ejecucion-del-cliente-migasfree" title="Permanent link">&para;</a></h2>
+<p>Hasta ahora, siempre hemos ejecutado el cliente <em>migasfree</em> desde
+consola mediante el comando <code>migasfree -u</code> como <code>root</code>. Ahora vamos a
+hacer que se ejecute automáticamente cada vez que el usuario abra una
+sesión gráfica. Para este propósito, existe
+<code class="interpreted-text" role="ref">Migasfree Play</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>Hasta la versión 4.15 del servidor migasfree se venía utilizando
+migasfree-launcher, pero éste ha sido reemplazado por
+<code class="interpreted-text" role="ref">Migasfree Play</code> que tiene más
+funcionalidades.</p>
+</div>
+<p>A continuación vamos a descargar el paquete y construirlo.</p>
+<pre><code>$ wget https://github.com/migasfree/migasfree-play/archive/latest.zip
+$ unzip latest.zip
+$ rm latest.zip
+$ cd migasfree-play-latest
+$ cat README.md
+</code></pre>
+
+<p>Instalamos los requerimientos para la construcción del paquete.</p>
+<pre><code># apt-get install devscripts debhelper npm
+</code></pre>
+
+<p>Y ahora sí, construye finalmente el paquete.</p>
+<pre><code>$ /usr/bin/debuild --no-tgz-check -us -uc
+</code></pre>
+
+<p>Sube el fichero migasfree-play al servidor:</p>
+<pre><code># migasfree-upload -f migasfree-play_*.deb
+</code></pre>
+
+<p>Ahora, observa los ficheros que contiene este paquete:</p>
+<ul>
+<li><code>etc/sudoers.d/migasfree-play</code> establece los comandos que no
+    requieren <strong>password de root</strong> para que pueden ser ejecutados desde
+    un usuario cualquiera. Puedes obtener más información sobre la
+    configuración de <code>sudoers</code> ejecutando <code>man sudoers</code> en un terminal.</li>
+<li>
+<p><code>etc/xdg/autostart/migasfree-play-sync.desktop</code> ejecutará el comando
+    <code>/usr/bin/migasfree-play</code> cuando el usuario inicia sesión gráfica.</p>
+<p>Puedes aprender más sobre la especificación de los ficheros
+<strong>.desktop</strong> en
+<a href="http://standards.freedesktop.org/desktop-entry-spec/latest/index.html">freedesktop.org</a>.</p>
+</li>
+</ul>
+<p>Ahora que ya tienes los paquetes <code>tuempesa-migasfree-client</code> y
+<code>migasfree-play</code> en el servidor <em>migasfree</em>, crea un despliegue en el
+servidor y pon estos paquetes en <code>paquetes a instalar</code> y asígnale el
+atributo <code>SET-ALL SYSTEMS</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>Para aprender más sobre el empaquetado, consulta la <a href="http://www.debian.org/doc/manuals/maint-guide/index.es.html">Guía del nuevo
+desarrollador de
+Debian</a></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>Para paquetería <code>rpm</code>, los metadatos del paquete se especifican en un
+único fichero llamado <code>SPEC</code>. Para aprender más sobre la creación de
+paquetes <strong>rpm</strong>, puedes consultar <a href="http://www.rpm.org/">rpm.org</a> y la
+<a href="http://fedoraproject.org/wiki/How_to_create_an_RPM_package">wiki del proyecto
+fedora</a>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>Otra manera de instalar migasfree-play es ejecutando:
+<code>wget -O - http://migasfree.org/pub/install-play | bash</code></p>
+</div>
+<h2 id="configurando-migasfree-play">Configurando migasfree-play<a class="headerlink" href="#configurando-migasfree-play" title="Permanent link">&para;</a></h2>
+<p>Partiendo del paquete <code>acme-migasfree-play</code> vamos a crear ahora el
+paquete <code>tuempresa-migasfree-play</code> el cual configurará <code>migasfree-play</code>.</p>
+<p>En el proyecto
+<a href="https://github.com/migasfree/fun-with-migasfree-examples">fun-with-migasfree-examples</a>
+(que anteriormente ya te has bajado) tienes un ejemplo de configuración
+de migasfree-play.</p>
+<p>Adapta acme-migasfree-play tal y como hiciste con acme-migasfree-client.
+Es decir, modifica los ficheros, cambiando donde se requiera, el nombre
+del paquete <code>acme-migasfree-play</code> por <code>tuempresa-migasfree-play</code> y pon
+tu <code>nombre</code> y la <code>fecha actual</code>.</p>
+<p>Una vez adaptado accede al nuevo directorio tuempresa-migasfree-play y
+observa el contenido, en concreto:</p>
+<p>En <code>usr/share/divert/usr/share/migasfree-play/package.json</code> está el
+fichero de configuración de <a href="https://github.com/nwjs/nw.js">NW.js</a> con
+el que hemos desarrollado migasfree-play.</p>
+<p>En <code>usr/share/divert/usr/share/migasfree-play/settings.json</code> puedes
+cambiar el idioma, y deshabilitar puntos de menús.</p>
+<p>En <code>usr/share/migasfree-play/token</code> deberás poner el <strong>token del
+usuario</strong> migasfree-play. Para ello entra en el interfaz de
+administración del servidor - Configuración - Administración del sitio -
+Tokens. Una vez allí añade un token al usuario migasfree-play. El token
+que se haya generado tendrás que ponerlo dentro del fichero
+<code>usr/share/migasfree-play/token</code>.</p>
+<p>Ahora, construye el paquete tuempresa-migasfree-play:</p>
+<pre><code>$ cd tuempresa-migasfree-play
+$ /usr/bin/debuild --no-tgz-check -us -uc
+</code></pre>
+
+<p>y súbelo al servidor:</p>
+<pre><code># cd ..
+# migasfree-upload -f tuempresa-migasfree-play_*.deb
+</code></pre>
+
+<h2 id="despliegue">Despliegue<a class="headerlink" href="#despliegue" title="Permanent link">&para;</a></h2>
+<p>A partir de este momento, vas a poder administrar fácilmente los
+escritorios Ubuntu de tu organización, de forma generalizada, instalando
+estos paquetes.</p>
+<p>Hay varias formas de realizar esta instalación:</p>
+<ul>
+<li>
+<p>Bajando los paquetes a cada uno de los escritorios e instalándolos
+  mediante el comando <code>dpkg -i</code></p>
+</li>
+<li>
+<p>Creando un fichero <code>/etc/apt/sources.list.d/migasfree.list</code> con el
+  siguiente contenido:</p>
+</li>
+</ul>
+<pre><code>deb http://&lt;myserver&gt;/public/&lt;project&gt;/REPOSITORIES &lt;deployment&gt; PKGS
+</code></pre>
+
+<div class="admonition info">
+<p class="admonition-title">nota</p>
+<p>sutituye:</p>
+<ul>
+<li><code>&lt;myserver&gt;</code> por tu servidor.</li>
+<li><code>&lt;project&gt;</code> por el proyecto que pusiste en /etc/migasfree.conf</li>
+<li>y <code>&lt;deployment&gt;</code> por el nombre de un despliegue que tenga como
+  paquetes disponibles: <code>tuempresa-migasfree-client</code>,
+  <code>migasfree-client</code>, <code>tuempresa-migasfree-play</code> y
+  <code>migasfree-play</code>. Como paquetes a instalar puedes poner:
+  <code>tuempresa-migasfree-client</code> y <code>tuempresa-migasfree-play</code></li>
+</ul>
+</div>
+<p>Una vez creado este fichero, ejecuta:</p>
+<pre><code># apt-get update
+# apt-get install tuempresa-migasfree-client tuempresa-migasfree-play
+# migasfree -u
+</code></pre>
+
+<p>y tendrás instalados los 4 paquetes.</p>
+<ul>
+<li>
+<p>También puedes hacer un clon de un equipo donde ya estén instalados estos
+  paquetes, utilizando un sistema de clonado como
+  <a href="http://clonezilla.org/">clonezilla</a>. Este es el método que usamos
+  en <strong>AZLinux</strong>, y nos resulta muy cómodo y rápido ya que en una
+  memoria USB llevamos un <em>clonezilla</em>, junto con la imagen clonada de
+  nuestro escritorio, consiguiendo instalar un AZLinux en menos de 10
+  minutos.</p>
+</li>
+<li>
+<p>O puedes crear un DVD de tu escritorio tal y como se realiza en el
+  proyecto <a href="http://wiki.vitalinux.educa.aragon.es/">vitalinux</a>. En
+  concreto, tendrías que adaptar el paquete
+  <a href="https://github.com/vitalinux/vx-create-iso">vx-create-iso</a> a tus
+  necesidades. En este método son los usuarios quienes se bajan la ISO
+  del DVD y se instalan ellos mismos el sistema.</p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Pie">
+        
+          <a href="../config_soft/" title="Configurando software al estilo migasfree" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Configurando software al estilo migasfree
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../part3/admin_interface/" title="El interfaz de administración" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                El interfaz de administración
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2013-2020 Alberto Gacías
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.a0c4167b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fb26dd1d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
